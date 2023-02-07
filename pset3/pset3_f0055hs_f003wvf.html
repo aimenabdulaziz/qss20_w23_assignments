@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>pset3_blank</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>pset3_f0055hs_f003wvf</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14648,7 +14649,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14657,11 +14658,128 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">debar</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;pset3_inputdata/debar.csv&#39;</span><span class="p">)</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>J&amp;J Harvesting</td>
+      <td>Leads, ND</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>2 years</td>
+      <td>1/19/2014</td>
+      <td>1/18/2016</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Stahlman Apiaries, Inc</td>
+      <td>Selby, SD</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>1 year</td>
+      <td>2/19/2015</td>
+      <td>2/14/2016</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Trust Nursery</td>
+      <td>Pulaski, NY</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>1 year</td>
+      <td>3/21/2014</td>
+      <td>3/20/2015</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Anton Fertilizer Inc.</td>
+      <td>Dighton, KS</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>3/30/2014</td>
+      <td>3/29/2016</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Great Plains Fluid Service, Inc.</td>
+      <td>Greensburg, KS</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>3/30/2014</td>
+      <td>3/29/2016</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Index([&#39;Name&#39;, &#39;City, State&#39;, &#39;Violation&#39;, &#39;Duration&#39;, &#39;Start date&#39;,
+       &#39;End date&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14694,7 +14812,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14703,11 +14821,53 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">shape</span>
+<span class="c1">## There are 98 unique employer name whereas the dataset has 114 entries, indicating that there are multiple rows for some employers.</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>98</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(114, 6)</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14726,7 +14886,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14735,11 +14895,41 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;violation_number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">cumcount</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;violation_number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="s1">&#39;violation_number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;viol&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;violation_number&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>viol1    98
+viol2    16
+Name: violation_number, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14759,7 +14949,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14768,11 +14958,235 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="c1">## extract state names from the &#39;City, State&#39; column</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="s1">&#39;City, State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;,\s+(.*)&#39;</span><span class="p">)</span>
+
+<span class="c1">## long form indicator</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;State_long_indicator&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="kc">True</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="k">else</span> <span class="kc">False</span><span class="p">)</span>
+<span class="c1"># debar[&#39;State&#39;].value_counts()</span>
+<span class="n">long_state_names</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">debar</span><span class="p">[(</span><span class="o">~</span><span class="n">debar</span><span class="o">.</span><span class="n">State</span><span class="o">.</span><span class="n">isna</span><span class="p">())</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">debar</span><span class="o">.</span><span class="n">State_long_indicator</span> <span class="o">==</span> <span class="kc">True</span><span class="p">)][</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+
+<span class="n">long_state_names</span> <span class="c1"># a set of all the states with a long-format name</span>
+
+<span class="n">debar</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">State</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;Arkansas&#39;,
+ &#39;California&#39;,
+ &#39;Florida&#39;,
+ &#39;Georgia&#39;,
+ &#39;Idaho&#39;,
+ &#39;Kansas&#39;,
+ &#39;Louisiana&#39;,
+ &#39;Massachusetts&#39;,
+ &#39;North Carolina&#39;,
+ &#39;North Dakota&#39;,
+ &#39;Tennessee&#39;,
+ &#39;Texas&#39;,
+ &#39;Utah&#39;,
+ &#39;Vermont&#39;}</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>39</th>
+      <td>Valley View Orchards</td>
+      <td>NaN</td>
+      <td>Impeding the Audit Process – Partial Response;</td>
+      <td>2 years</td>
+      <td>7/22/2015</td>
+      <td>7/21/2017</td>
+      <td>viol1</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## violation count of all the states in the long-format name</span>
+<span class="n">debar</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">State</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">long_state_names</span><span class="p">)][</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Georgia           9
+Texas             4
+North Dakota      3
+Utah              2
+Florida           2
+Kansas            1
+California        1
+Arkansas          1
+Vermont           1
+Tennessee         1
+Louisiana         1
+North Carolina    1
+Idaho             1
+Massachusetts     1
+Name: State, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## subset only the states with a violation count of more than one</span>
+<span class="n">long_format_count</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">State</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">long_state_names</span><span class="p">)][</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">long_format_count</span> <span class="o">=</span> <span class="n">long_format_count</span><span class="p">[</span><span class="n">long_format_count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The states in long format with more than one violations are: &quot;</span><span class="p">)</span>
+<span class="n">long_format_count</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The states in long format with more than one violations are: 
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Georgia         9
+Texas           4
+North Dakota    3
+Utah            2
+Florida         2
+Name: State, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14795,7 +15209,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14804,11 +15218,266 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">crosswalk_url</span> <span class="o">=</span> <span class="s1">&#39;http://app02.clerk.org/menu/ccis/Help/CCIS%20Codes/state_codes.html&#39;</span>
+<span class="n">state_crosswalk</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">crosswalk_url</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">state_crosswalk</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Abbreviation&#39;</span><span class="p">,</span> <span class="s1">&#39;State&#39;</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">convert_to_abbreviation</span><span class="p">(</span><span class="n">state_name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Convert state name to abbreviation&quot;&quot;&quot;</span>
+    <span class="n">abbreviation</span> <span class="o">=</span> <span class="n">state_crosswalk</span><span class="p">[</span><span class="n">state_crosswalk</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">state_name</span><span class="p">][</span><span class="s1">&#39;Abbreviation&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="c1">## return the first element of the array if the abbreviation is successful</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">abbreviation</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">abbreviation</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">state_name</span>
+
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;State_cleaned&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="s1">&#39;State&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">convert_to_abbreviation</span><span class="p">)</span>
+
+<span class="c1">## print the cleaned state column and compare it to the original state column</span>
+<span class="n">debar</span><span class="p">[[</span><span class="s1">&#39;City, State&#39;</span><span class="p">,</span> <span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;State_cleaned&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>City, State</th>
+      <th>State</th>
+      <th>State_cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>58</th>
+      <td>Ingalls, KS</td>
+      <td>KS</td>
+      <td>KS</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Lakin, KS</td>
+      <td>KS</td>
+      <td>KS</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Albion, NY</td>
+      <td>NY</td>
+      <td>NY</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Santa Maria, CA</td>
+      <td>CA</td>
+      <td>CA</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Roosevelt, UT</td>
+      <td>UT</td>
+      <td>UT</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>Rensselaer, NY</td>
+      <td>NY</td>
+      <td>NY</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Morton, TX</td>
+      <td>TX</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Altheimer, AK</td>
+      <td>AK</td>
+      <td>AK</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Brownsville, TX</td>
+      <td>TX</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Baxley, GA</td>
+      <td>GA</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>Axson, Georgia</td>
+      <td>Georgia</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>Adel, GA</td>
+      <td>GA</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Hermitage, AR</td>
+      <td>AR</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>Lyons, Georgia</td>
+      <td>Georgia</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Caddo, TX</td>
+      <td>TX</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Dighton, KS</td>
+      <td>KS</td>
+      <td>KS</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Rifle, CO</td>
+      <td>CO</td>
+      <td>CO</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Ipswich, SD</td>
+      <td>SD</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Houma, LA</td>
+      <td>LA</td>
+      <td>LA</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Seminole, Texas</td>
+      <td>Texas</td>
+      <td>TX</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## count the number of violations for each state on the cleaned state column</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;State_cleaned&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>GA    19
+TX    18
+KS    10
+FL    10
+ND     6
+UT     6
+SD     5
+KY     5
+CA     4
+AR     3
+NY     3
+MA     3
+CO     3
+LA     3
+MT     2
+ID     2
+OK     2
+MN     1
+SC     1
+VT     1
+TN     1
+AK     1
+MD     1
+NC     1
+IL     1
+ME     1
+Name: State_cleaned, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14830,7 +15499,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14839,11 +15508,939 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">employee_count</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">repeated_employees</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">employee_count</span><span class="p">[</span><span class="n">employee_count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="c1">## create a boolean indicator for repeated employees</span>
+<span class="n">debar</span><span class="p">[</span><span class="s1">&#39;is_repeated&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar</span><span class="o">.</span><span class="n">Name</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">repeated_employees</span><span class="p">)</span>
+
+<span class="c1">## print all the repeated employees</span>
+<span class="n">repeated_employees</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;Annabella Land &amp; Cattle&#39;,
+ &#39;Autumn Hill Orchard&#39;,
+ &#39;Caddo Creek Ranch, dba Paradise Ranch&#39;,
+ &#39;Cisco Produce Inc.&#39;,
+ &#39;Dove Creek Farms&#39;,
+ &#39;F&amp;W Farms&#39;,
+ &#39;Loewen Harvesting LLC&#39;,
+ &#39;Macky and Brad Farms&#39;,
+ &#39;Maple Ridge Custom Services, LLC&#39;,
+ &#39;Mark Duncan&#39;,
+ &#39;Old Tree Farms/Verpaalen Custom Service&#39;,
+ &#39;Rollo Farm Labor Contractor&#39;,
+ &#39;SRT Farms&#39;,
+ &#39;Sharon Mathis&#39;,
+ &#39;Turner Farms&#39;,
+ &#39;Xavier Horne&#39;}</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## print the rows where is_repeated is True</span>
+<span class="n">debar</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">is_repeated</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>is_repeated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>Annabella Land &amp; Cattle</td>
+      <td>Annabella, UT</td>
+      <td>Non Payment</td>
+      <td>1 year</td>
+      <td>5/9/2014</td>
+      <td>5/9/2015</td>
+      <td>viol1</td>
+      <td>UT</td>
+      <td>False</td>
+      <td>UT</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Annabella Land &amp; Cattle</td>
+      <td>Annabella, Utah</td>
+      <td>Non-payment</td>
+      <td>1 year</td>
+      <td>5/9/2014</td>
+      <td>5/8/2015</td>
+      <td>viol2</td>
+      <td>Utah</td>
+      <td>True</td>
+      <td>UT</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Autumn Hill Orchard</td>
+      <td>Groton, MA</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+      <td>2 years</td>
+      <td>7/6/2014</td>
+      <td>7/5/2016</td>
+      <td>viol2</td>
+      <td>MA</td>
+      <td>False</td>
+      <td>MA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Autumn Hill Orchard</td>
+      <td>Groton, MA</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>7/6/2014</td>
+      <td>7/5/2016</td>
+      <td>viol1</td>
+      <td>MA</td>
+      <td>False</td>
+      <td>MA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Caddo Creek Ranch, dba Paradise Ranch</td>
+      <td>Caddo, TX</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>2 years</td>
+      <td>7/20/2014</td>
+      <td>7/19/2016</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Caddo Creek Ranch, dba Paradise Ranch</td>
+      <td>Caddo, Texas</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>2 years</td>
+      <td>7/20/2014</td>
+      <td>7/19/2016</td>
+      <td>viol2</td>
+      <td>Texas</td>
+      <td>True</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Cisco Produce Inc.</td>
+      <td>Cairo, GA</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+      <td>2 years</td>
+      <td>12/10/2015</td>
+      <td>12/9/2017</td>
+      <td>viol2</td>
+      <td>GA</td>
+      <td>False</td>
+      <td>GA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Cisco Produce Inc.</td>
+      <td>Cairo, GA</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>12/10/2014</td>
+      <td>12/9/2016</td>
+      <td>viol1</td>
+      <td>GA</td>
+      <td>False</td>
+      <td>GA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>Dove Creek Farms</td>
+      <td>Mount Vernon, TX</td>
+      <td>Failure to respond to audit request</td>
+      <td>2 years</td>
+      <td>2/9/2018</td>
+      <td>2/8/2018</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>Dove Creek Farms</td>
+      <td>Mount Vernon, TX</td>
+      <td>Failure to Respond to Audit Request</td>
+      <td>2 years</td>
+      <td>2/9/2018</td>
+      <td>2/8/2020</td>
+      <td>viol2</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>F&amp;W Farms</td>
+      <td>Ingalls, KS</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>1 year</td>
+      <td>12/10/2014</td>
+      <td>12/9/2015</td>
+      <td>viol2</td>
+      <td>KS</td>
+      <td>False</td>
+      <td>KS</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>F&amp;W Farms</td>
+      <td>Ingalls, KS</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>2 years</td>
+      <td>12/10/2014</td>
+      <td>12/9/2016</td>
+      <td>viol1</td>
+      <td>KS</td>
+      <td>False</td>
+      <td>KS</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Loewen Harvesting LLC</td>
+      <td>Brownsville, TX</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>1 year</td>
+      <td>8/20/2014</td>
+      <td>8/19/2015</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Loewen Harvesting LLC</td>
+      <td>Brownfield, TX</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>1 year</td>
+      <td>8/20/2014</td>
+      <td>8/19/2015</td>
+      <td>viol2</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Macky and Brad Farms</td>
+      <td>Plains, TX</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>1 year</td>
+      <td>2/13/2015</td>
+      <td>2/12/2016</td>
+      <td>viol2</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Macky and Brad Farms</td>
+      <td>Plains, TX</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>1 year</td>
+      <td>2/13/2015</td>
+      <td>2/12/2016</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Maple Ridge Custom Services, LLC</td>
+      <td>Altheimer, AK</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol1</td>
+      <td>AK</td>
+      <td>False</td>
+      <td>AK</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Maple Ridge Custom Services, LLC</td>
+      <td>Altheimer, AR</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>1 year</td>
+      <td>11/16/2014</td>
+      <td>11/15/2015</td>
+      <td>viol2</td>
+      <td>AR</td>
+      <td>False</td>
+      <td>AR</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Mark Duncan</td>
+      <td>Roosevelt, UT</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol1</td>
+      <td>UT</td>
+      <td>False</td>
+      <td>UT</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Mark Duncan</td>
+      <td>Roosevelt, UT</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol2</td>
+      <td>UT</td>
+      <td>False</td>
+      <td>UT</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Old Tree Farms/Verpaalen Custom Service</td>
+      <td>Volga, SD</td>
+      <td>WHD Debarment</td>
+      <td>3 years</td>
+      <td>12/11/2014</td>
+      <td>12/10/2017</td>
+      <td>viol1</td>
+      <td>SD</td>
+      <td>False</td>
+      <td>SD</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Old Tree Farms/Verpaalen Custom Service</td>
+      <td>Volga, SD</td>
+      <td>Wage Hour Debarment</td>
+      <td>3 years</td>
+      <td>12/1/2014</td>
+      <td>12/1/2017</td>
+      <td>viol2</td>
+      <td>SD</td>
+      <td>False</td>
+      <td>SD</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Rollo Farm Labor Contractor</td>
+      <td>Miami, FL</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>8/23/2014</td>
+      <td>8/22/2016</td>
+      <td>viol1</td>
+      <td>FL</td>
+      <td>False</td>
+      <td>FL</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Rollo Farm Labor Contractor</td>
+      <td>Miami, FL</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+      <td>2 years</td>
+      <td>8/23/2014</td>
+      <td>8/22/2016</td>
+      <td>viol2</td>
+      <td>FL</td>
+      <td>False</td>
+      <td>FL</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>SRT Farms</td>
+      <td>Morton, TX</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>SRT Farms</td>
+      <td>Morton, TX</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol2</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Sharon Mathis</td>
+      <td>Tifton, GA</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol1</td>
+      <td>GA</td>
+      <td>False</td>
+      <td>GA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Sharon Mathis</td>
+      <td>Tifton, GA</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol2</td>
+      <td>GA</td>
+      <td>False</td>
+      <td>GA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>Turner Farms</td>
+      <td>Healy, KS</td>
+      <td>Failure to comply with the employer's obligati...</td>
+      <td>6 months</td>
+      <td>7/17/19</td>
+      <td>2/10/2020</td>
+      <td>viol1</td>
+      <td>KS</td>
+      <td>False</td>
+      <td>KS</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>Turner Farms</td>
+      <td>Healy, KS</td>
+      <td>Failure to comply with the employer's obligati...</td>
+      <td>7 months</td>
+      <td>7/17/19</td>
+      <td>2/10/20</td>
+      <td>viol2</td>
+      <td>KS</td>
+      <td>False</td>
+      <td>KS</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Xavier Horne</td>
+      <td>Lyons, Georgia</td>
+      <td>Non-payment of certification fee</td>
+      <td>1 year</td>
+      <td>6/16/2016</td>
+      <td>6/15/2017</td>
+      <td>viol1</td>
+      <td>Georgia</td>
+      <td>True</td>
+      <td>GA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>Xavier Horne</td>
+      <td>Lyons, Georgia</td>
+      <td>Failure to respond to audit request</td>
+      <td>2 years</td>
+      <td>9/27/2017</td>
+      <td>9/26/2019</td>
+      <td>viol2</td>
+      <td>Georgia</td>
+      <td>True</td>
+      <td>GA</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We noticed that for 'Maple Ridge Custom Services, LLC' the states for the two entries are not the same. It says <code>Altheimer, AK</code> for the first and <code>Altheimer, AR</code> for the second. It seems like the person made a mistake while entering the data to the database. Since, <code>Altheimer</code> is a city in Arkansas(AK), we are going to perform data cleaning manually.</p>
+<p>The city name for 'Loewen Harvesting LLC' is also inconsistent, so we will clean the data manually.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## edit the state name manually and print the edited rows</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">Name</span> <span class="o">==</span> <span class="s2">&quot;Maple Ridge Custom Services, LLC&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;City, State&#39;</span><span class="p">,</span> <span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;State_cleaned&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Altheimer, AR&quot;</span><span class="p">,</span> <span class="s2">&quot;AR&quot;</span><span class="p">,</span> <span class="s2">&quot;AR&quot;</span><span class="p">]</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">Name</span> <span class="o">==</span> <span class="s2">&quot;Maple Ridge Custom Services, LLC&quot;</span><span class="p">,</span> <span class="p">]</span>
+
+<span class="c1">## edit the city name for Loewen Harvesting LLC</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">Name</span> <span class="o">==</span> <span class="s2">&quot;Loewen Harvesting LLC&quot;</span><span class="p">,</span> <span class="s1">&#39;City, State&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Brownsville, TX&quot;</span>
+<span class="n">debar</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">Name</span> <span class="o">==</span> <span class="s2">&quot;Loewen Harvesting LLC&quot;</span><span class="p">,</span> <span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>is_repeated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>17</th>
+      <td>Maple Ridge Custom Services, LLC</td>
+      <td>Altheimer, AR</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>2 years</td>
+      <td>11/16/2014</td>
+      <td>11/15/2016</td>
+      <td>viol1</td>
+      <td>AR</td>
+      <td>False</td>
+      <td>AR</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Maple Ridge Custom Services, LLC</td>
+      <td>Altheimer, AR</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>1 year</td>
+      <td>11/16/2014</td>
+      <td>11/15/2015</td>
+      <td>viol2</td>
+      <td>AR</td>
+      <td>False</td>
+      <td>AR</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>is_repeated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>11</th>
+      <td>Loewen Harvesting LLC</td>
+      <td>Brownsville, TX</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>1 year</td>
+      <td>8/20/2014</td>
+      <td>8/19/2015</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Loewen Harvesting LLC</td>
+      <td>Brownsville, TX</td>
+      <td>Impeding the Audit Process – Partial- Response</td>
+      <td>1 year</td>
+      <td>8/20/2014</td>
+      <td>8/19/2015</td>
+      <td>viol2</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Subset to the rows where `is_repeated == True` and save that data as `mult_debar`. Print the head() and shape</span>
+<span class="n">mult_debar</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="n">debar</span><span class="o">.</span><span class="n">is_repeated</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">mult_debar</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">mult_debar</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>is_repeated</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6</th>
+      <td>Annabella Land &amp; Cattle</td>
+      <td>Annabella, UT</td>
+      <td>Non Payment</td>
+      <td>1 year</td>
+      <td>5/9/2014</td>
+      <td>5/9/2015</td>
+      <td>viol1</td>
+      <td>UT</td>
+      <td>False</td>
+      <td>UT</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Autumn Hill Orchard</td>
+      <td>Groton, MA</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>7/6/2014</td>
+      <td>7/5/2016</td>
+      <td>viol1</td>
+      <td>MA</td>
+      <td>False</td>
+      <td>MA</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Caddo Creek Ranch, dba Paradise Ranch</td>
+      <td>Caddo, TX</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>2 years</td>
+      <td>7/20/2014</td>
+      <td>7/19/2016</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Loewen Harvesting LLC</td>
+      <td>Brownsville, TX</td>
+      <td>Failure to respond to audit (partial response)</td>
+      <td>1 year</td>
+      <td>8/20/2014</td>
+      <td>8/19/2015</td>
+      <td>viol1</td>
+      <td>TX</td>
+      <td>False</td>
+      <td>TX</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Rollo Farm Labor Contractor</td>
+      <td>Miami, FL</td>
+      <td>Failure to respond to audit (no response)</td>
+      <td>2 years</td>
+      <td>8/23/2014</td>
+      <td>8/22/2016</td>
+      <td>viol1</td>
+      <td>FL</td>
+      <td>False</td>
+      <td>FL</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(32, 11)</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14876,7 +16473,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14885,11 +16482,202 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="c1">## clean the state name in &#39;City, State&#39; column</span>
+<span class="c1">## axis == 1 means apply the function to each row (make changes to all the entires in the column)</span>
+<span class="n">mult_debar</span><span class="p">[</span><span class="s1">&#39;City, State&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mult_debar</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;,.*&#39;</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span> <span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;City, State&#39;</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">mult_debar</span><span class="p">[</span><span class="s1">&#39;State_cleaned&#39;</span><span class="p">]</span>
+
+
+<span class="c1">## the commented code below accomplishes the same thing as the above code</span>
+<span class="c1"># for i in range(mult_debar.shape[0]):</span>
+<span class="c1">#     mult_debar.loc[i, &#39;City, State&#39;] = re.sub(r&#39;,.*&#39;, &quot;, &quot; + mult_debar[&#39;State_cleaned&#39;].iloc[i], mult_debar[&#39;City, State&#39;].iloc[i])</span>
+
+<span class="c1">## reshare mult_debar to wide format</span>
+<span class="n">mult_debar_wide</span> <span class="o">=</span> <span class="n">mult_debar</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;City, State&#39;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;violation_number&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;Start date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">mult_debar_wide</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;City, State&#39;</span><span class="p">,</span> <span class="s1">&#39;start_date_viol1&#39;</span><span class="p">,</span> <span class="s1">&#39;start_date_viol2&#39;</span><span class="p">]</span>
+<span class="n">mult_debar_wide</span>
+<span class="n">mult_debar_wide</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>start_date_viol1</th>
+      <th>start_date_viol2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Annabella Land &amp; Cattle</td>
+      <td>Annabella, UT</td>
+      <td>5/9/2014</td>
+      <td>5/9/2014</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Autumn Hill Orchard</td>
+      <td>Groton, MA</td>
+      <td>7/6/2014</td>
+      <td>7/6/2014</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Caddo Creek Ranch, dba Paradise Ranch</td>
+      <td>Caddo, TX</td>
+      <td>7/20/2014</td>
+      <td>7/20/2014</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Cisco Produce Inc.</td>
+      <td>Cairo, GA</td>
+      <td>12/10/2014</td>
+      <td>12/10/2015</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Dove Creek Farms</td>
+      <td>Mount Vernon, TX</td>
+      <td>2/9/2018</td>
+      <td>2/9/2018</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>F&amp;W Farms</td>
+      <td>Ingalls, KS</td>
+      <td>12/10/2014</td>
+      <td>12/10/2014</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Loewen Harvesting LLC</td>
+      <td>Brownsville, TX</td>
+      <td>8/20/2014</td>
+      <td>8/20/2014</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Macky and Brad Farms</td>
+      <td>Plains, TX</td>
+      <td>2/13/2015</td>
+      <td>2/13/2015</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Maple Ridge Custom Services, LLC</td>
+      <td>Altheimer, AR</td>
+      <td>11/16/2014</td>
+      <td>11/16/2014</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Mark Duncan</td>
+      <td>Roosevelt, UT</td>
+      <td>11/16/2014</td>
+      <td>11/16/2014</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Old Tree Farms/Verpaalen Custom Service</td>
+      <td>Volga, SD</td>
+      <td>12/11/2014</td>
+      <td>12/1/2014</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Rollo Farm Labor Contractor</td>
+      <td>Miami, FL</td>
+      <td>8/23/2014</td>
+      <td>8/23/2014</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>SRT Farms</td>
+      <td>Morton, TX</td>
+      <td>11/16/2014</td>
+      <td>11/16/2014</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Sharon Mathis</td>
+      <td>Tifton, GA</td>
+      <td>11/16/2014</td>
+      <td>11/16/2014</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Turner Farms</td>
+      <td>Healy, KS</td>
+      <td>7/17/19</td>
+      <td>7/17/19</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Xavier Horne</td>
+      <td>Lyons, GA</td>
+      <td>6/16/2016</td>
+      <td>9/27/2017</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(16, 4)</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14912,7 +16700,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14921,11 +16709,52 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">mult_debar_wide</span><span class="p">[</span><span class="s1">&#39;is_dup&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mult_debar_wide</span><span class="p">[</span><span class="s1">&#39;start_date_viol1&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">mult_debar_wide</span><span class="p">[</span><span class="s1">&#39;start_date_viol2&#39;</span><span class="p">]</span>
+<span class="c1"># debar.drop(columns=&#39;is_repeated&#39;, inplace=True)</span>
+
+<span class="c1">## set of all the employees with duplicate violations (i.e. the same start date for both violations)</span>
+<span class="n">duplicate_employees</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">mult_debar_wide</span><span class="p">[</span><span class="n">mult_debar_wide</span><span class="p">[</span><span class="s1">&#39;is_dup&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">][</span><span class="s1">&#39;Name&#39;</span><span class="p">])</span>
+
+<span class="c1">## subset rows where the employee only have one violation</span>
+<span class="n">debar_not_dup</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[</span><span class="o">~</span><span class="p">(</span><span class="n">debar</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">duplicate_employees</span><span class="p">))]</span>
+
+<span class="c1">## subset rows where the employee have two violations and keep only the first violation</span>
+<span class="n">debar_dup_viol1</span> <span class="o">=</span> <span class="n">debar</span><span class="p">[(</span><span class="n">debar</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">duplicate_employees</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">debar</span><span class="p">[</span><span class="s1">&#39;violation_number&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;viol1&#39;</span><span class="p">)]</span>
+
+<span class="n">debar_clean</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">debar_not_dup</span><span class="p">,</span> <span class="n">debar_dup_viol1</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">debar_clean</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;is_repeated&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;debar_clean shape:&quot;</span><span class="p">,</span> <span class="n">debar_clean</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# of unique employer names:&quot;</span><span class="p">,</span> <span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>debar_clean shape: (101, 10)
+# of unique employer names: 98
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14952,7 +16781,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14961,11 +16790,241 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here to load the data </span>
+<span class="n">jobs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;pset3_inputdata/jobs.csv&#39;</span><span class="p">)</span>
+<span class="n">jobs</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">jobs</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">jobs</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CASE_NUMBER</th>
+      <th>CASE_STATUS</th>
+      <th>RECEIVED_DATE</th>
+      <th>DECISION_DATE</th>
+      <th>TYPE_OF_EMPLOYER_APPLICATION</th>
+      <th>H2A_LABOR_CONTRACTOR</th>
+      <th>NATURE_OF_TEMPORARY_NEED</th>
+      <th>EMERGENCY_FILING</th>
+      <th>EMPLOYER_NAME</th>
+      <th>TRADE_NAME_DBA</th>
+      <th>...</th>
+      <th>ADDENDUM_B_HOUSING_ATTACHED</th>
+      <th>TOTAL_HOUSING_RECORDS</th>
+      <th>MEALS_PROVIDED</th>
+      <th>MEALS_CHARGED</th>
+      <th>MEAL_REIMBURSEMENT_MINIMUM</th>
+      <th>MEAL_REIMBURSEMENT_MAXIMUM</th>
+      <th>PHONE_TO_APPLY</th>
+      <th>EMAIL_TO_APPLY</th>
+      <th>WEBSITE_TO_APPLY</th>
+      <th>TOTAL_ADDENDUM_A_RECORDS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>H-300-20199-721302</td>
+      <td>Determination Issued - Withdrawn</td>
+      <td>2020-07-17 14:50:40.840</td>
+      <td>2020-10-01 00:00:00.000</td>
+      <td>Individual Employer</td>
+      <td>N</td>
+      <td>Seasonal</td>
+      <td>Y</td>
+      <td>Fazio Farms Operating Company, LLC</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>N</td>
+      <td>1</td>
+      <td>Y</td>
+      <td>12.68</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>13607017661</td>
+      <td>faziofarms@gmail.com</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>H-300-20231-773906</td>
+      <td>Determination Issued - Certification</td>
+      <td>2020-08-20 10:38:15.620</td>
+      <td>2020-10-01 00:00:00.000</td>
+      <td>Association - Agent</td>
+      <td>N</td>
+      <td>Seasonal</td>
+      <td>N</td>
+      <td>Charlie Sunderland</td>
+      <td>Panter &amp; Sunderland Nursery</td>
+      <td>...</td>
+      <td>N</td>
+      <td>1</td>
+      <td>N</td>
+      <td>NaN</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>19318083783</td>
+      <td>NaN</td>
+      <td>https://www.jobs4tn.gov/vosnet/Default.aspx</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>H-300-20231-774123</td>
+      <td>Determination Issued - Certification</td>
+      <td>2020-08-24 15:33:14.340</td>
+      <td>2020-10-01 00:00:00.000</td>
+      <td>Individual Employer</td>
+      <td>N</td>
+      <td>Seasonal</td>
+      <td>N</td>
+      <td>Michael Rudebusch</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>N</td>
+      <td>1</td>
+      <td>N</td>
+      <td>NaN</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>19369333827</td>
+      <td>fayethlynpitre@rocketmail.com</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>H-300-20231-774151</td>
+      <td>Determination Issued - Certification</td>
+      <td>2020-08-21 12:08:09.760</td>
+      <td>2020-10-01 00:00:00.000</td>
+      <td>Individual Employer</td>
+      <td>N</td>
+      <td>Seasonal</td>
+      <td>N</td>
+      <td>Lodahl Farms</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>Y</td>
+      <td>2</td>
+      <td>N</td>
+      <td>NaN</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>14069637560</td>
+      <td>lodahl_kelsey@yahoo.com</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>H-300-20231-774508</td>
+      <td>Determination Issued - Certification</td>
+      <td>2020-08-20 10:17:34.530</td>
+      <td>2020-10-01 00:00:00.000</td>
+      <td>Individual Employer</td>
+      <td>Y</td>
+      <td>Seasonal</td>
+      <td>N</td>
+      <td>Dunson Harvesting, Inc.</td>
+      <td>Dunson Harvesting, Inc.</td>
+      <td>...</td>
+      <td>Y</td>
+      <td>8</td>
+      <td>N</td>
+      <td>NaN</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>18632939888</td>
+      <td>NaN</td>
+      <td>www.employflorida.com</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 138 columns</p>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Index([&#39;CASE_NUMBER&#39;, &#39;CASE_STATUS&#39;, &#39;RECEIVED_DATE&#39;, &#39;DECISION_DATE&#39;,
+       &#39;TYPE_OF_EMPLOYER_APPLICATION&#39;, &#39;H2A_LABOR_CONTRACTOR&#39;,
+       &#39;NATURE_OF_TEMPORARY_NEED&#39;, &#39;EMERGENCY_FILING&#39;, &#39;EMPLOYER_NAME&#39;,
+       &#39;TRADE_NAME_DBA&#39;,
+       ...
+       &#39;ADDENDUM_B_HOUSING_ATTACHED&#39;, &#39;TOTAL_HOUSING_RECORDS&#39;,
+       &#39;MEALS_PROVIDED&#39;, &#39;MEALS_CHARGED&#39;, &#39;MEAL_REIMBURSEMENT_MINIMUM&#39;,
+       &#39;MEAL_REIMBURSEMENT_MAXIMUM&#39;, &#39;PHONE_TO_APPLY&#39;, &#39;EMAIL_TO_APPLY&#39;,
+       &#39;WEBSITE_TO_APPLY&#39;, &#39;TOTAL_ADDENDUM_A_RECORDS&#39;],
+      dtype=&#39;object&#39;, length=138)</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(2720, 138)</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15004,7 +17063,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15013,11 +17072,108 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="n">inner_joined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">debar_clean</span><span class="p">,</span> <span class="n">jobs</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span> <span class="n">left_on</span> <span class="o">=</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="n">right_on</span> <span class="o">=</span> <span class="s1">&#39;EMPLOYER_NAME&#39;</span><span class="p">,</span> <span class="n">indicator</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">## To see if there exact matches between the two datasets, we can print the inner_joined dataframe as it only merges when there are exact matches</span>
+<span class="n">inner_joined</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>...</th>
+      <th>TOTAL_HOUSING_RECORDS</th>
+      <th>MEALS_PROVIDED</th>
+      <th>MEALS_CHARGED</th>
+      <th>MEAL_REIMBURSEMENT_MINIMUM</th>
+      <th>MEAL_REIMBURSEMENT_MAXIMUM</th>
+      <th>PHONE_TO_APPLY</th>
+      <th>EMAIL_TO_APPLY</th>
+      <th>WEBSITE_TO_APPLY</th>
+      <th>TOTAL_ADDENDUM_A_RECORDS</th>
+      <th>_merge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Rafael Barajas</td>
+      <td>Sebring, Florida</td>
+      <td>Non-payment of certification fee</td>
+      <td>1 year</td>
+      <td>9/23/2016</td>
+      <td>9/22/2017</td>
+      <td>viol1</td>
+      <td>Florida</td>
+      <td>True</td>
+      <td>FL</td>
+      <td>...</td>
+      <td>3</td>
+      <td>Y</td>
+      <td>12.68</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>18632732686</td>
+      <td>NaN</td>
+      <td>https://seasonaljobs.dol.gov/</td>
+      <td>7</td>
+      <td>both</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 149 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15056,6 +17212,8 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## insert your code to turn into uppercase here</span>
+<span class="n">jobs_employer_name_upper</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;EMPLOYER_NAME&#39;</span><span class="p">]]</span>
+<span class="n">debar_employee_name_upper</span> <span class="o">=</span> <span class="p">[</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -15063,7 +17221,7 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15072,11 +17230,136 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## insert your code for the random sample</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;jobs&#39;</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">jobs_employer_name_upper</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">15</span><span class="p">),</span> <span class="s1">&#39;debar&#39;</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">debar_employee_name_upper</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)})</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>jobs</th>
+      <th>debar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>VP...</td>
+      <td>OLD TREE FARMS/VERPAALEN CUSTOM SERVICE</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>BAILEY FARMS SOUTH, LLC</td>
+      <td>ALTERIC JEAN-CHARLES</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>CHRISTOPHER WEST</td>
+      <td>B &amp; R HARVESTING AND PAUL CRUZ (INDIVIDUAL)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>MCLAIN FARMS, INC.</td>
+      <td>E.V. RANCH LLP</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NEW ENGLAND APIARIES, LLC</td>
+      <td>MARK DUNCAN</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>JORGE TORRES (J TORRES FARMS)</td>
+      <td>MYRKA MIREYA CARDENAS</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>KENNER SIMMENTAL RANCH</td>
+      <td>LESLIE RENEE DREW</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>JESUS MARTINEZ SANTIBANEZ</td>
+      <td>OLD TREE FARMS/VERPAALEN CUSTOM SERVICE</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>WESTERN RANGE ASSOCIATION</td>
+      <td>STAHLMAN APIARIES, INC</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>CHAD HOLBROOK</td>
+      <td>TURNER FARMS</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>SANDY WEBSTER</td>
+      <td>CITY PINESTRAW AND HARVESTING</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>CHALLIS CREEK CATTLE COMPANY, LLC</td>
+      <td>OLSON FARMS</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>NORTH PLAINS HONEY CO LLC</td>
+      <td>QUENTIN SCHELL</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>VENEGAS SHEARING</td>
+      <td>ABE- NANCY FROESE</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>MOORES' RANCH</td>
+      <td>LOEWEN HARVESTING LLC</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15088,6 +17371,8 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## insert your code for assigning the uppercase names back to the data</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">debar_employee_name_upper</span>
+<span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;EMPLOYER_NAME&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">jobs_employer_name_upper</span>
 </pre></div>
 
      </div>
@@ -15129,7 +17414,7 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15138,13 +17423,71 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## insert your code here with the regex pattern for part A</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(INC|LLC|CO)\.&#39;</span>
 
 <span class="c1">## insert your code to use re.sub to apply the pattern to the test cases for part B</span>
+<span class="c1">## &#39;\1&#39; is the content matched in the first capture group </span>
+<span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">pos_example_1</span><span class="p">)</span>
+<span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">pos_example_2</span><span class="p">)</span>
+<span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">neg_example</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;CISCO PRODUCE INC&#39;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;AVOYELLES HONEY CO, LLC&#39;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;E.V. RANCH LLP&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15173,6 +17516,12 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to clean the columns</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]]</span>
+<span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;\1&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;EMPLOYER_NAME&#39;</span><span class="p">]]</span>
+
+<span class="c1">## subset the rows where the name is cleaned (changed)</span>
+<span class="n">debar_name_cleaned</span> <span class="o">=</span> <span class="n">debar_clean</span><span class="p">[</span><span class="n">debar_clean</span><span class="o">.</span><span class="n">Name</span> <span class="o">!=</span> <span class="n">debar_clean</span><span class="o">.</span><span class="n">name_clean</span><span class="p">]</span>
+<span class="n">jobs_name_cleaned</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="n">jobs</span><span class="o">.</span><span class="n">EMPLOYER_NAME</span> <span class="o">!=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">name_clean</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15180,7 +17529,7 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15189,11 +17538,150 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to print the head</span>
+<span class="n">debar_name_cleaned</span><span class="p">[[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;name_clean&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">jobs_name_cleaned</span><span class="p">[[</span><span class="s1">&#39;EMPLOYER_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;name_clean&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>name_clean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>ANTON FERTILIZER INC.</td>
+      <td>ANTON FERTILIZER INC</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>GREAT PLAINS FLUID SERVICE, INC.</td>
+      <td>GREAT PLAINS FLUID SERVICE, INC</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>PROMAX INC.</td>
+      <td>PROMAX INC</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>REIMER'S INC.</td>
+      <td>REIMER'S INC</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>CISCO PRODUCE INC.</td>
+      <td>CISCO PRODUCE INC</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>EMPLOYER_NAME</th>
+      <th>name_clean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4</th>
+      <td>DUNSON HARVESTING, INC.</td>
+      <td>DUNSON HARVESTING, INC</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>FARM LABOR ASSOCIATION FOR GROWERS, INC.</td>
+      <td>FARM LABOR ASSOCIATION FOR GROWERS, INC</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>MCLAIN FARMS, INC.</td>
+      <td>MCLAIN FARMS, INC</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>BONNIE PLANTS, INC.</td>
+      <td>BONNIE PLANTS, INC</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>B &amp; W QUALITY GROWERS, INC.</td>
+      <td>B &amp; W QUALITY GROWERS, INC</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15219,7 +17707,7 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15228,11 +17716,107 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="c1">## join the two cleaned datasets</span>
+<span class="n">cleaned_inner_join</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">debar_clean</span><span class="p">,</span> <span class="n">jobs</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="s1">&#39;name_clean&#39;</span><span class="p">,</span> <span class="n">indicator</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">cleaned_inner_join</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>City, State</th>
+      <th>Violation</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>...</th>
+      <th>TOTAL_HOUSING_RECORDS</th>
+      <th>MEALS_PROVIDED</th>
+      <th>MEALS_CHARGED</th>
+      <th>MEAL_REIMBURSEMENT_MINIMUM</th>
+      <th>MEAL_REIMBURSEMENT_MAXIMUM</th>
+      <th>PHONE_TO_APPLY</th>
+      <th>EMAIL_TO_APPLY</th>
+      <th>WEBSITE_TO_APPLY</th>
+      <th>TOTAL_ADDENDUM_A_RECORDS</th>
+      <th>_merge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RAFAEL BARAJAS</td>
+      <td>Sebring, Florida</td>
+      <td>Non-payment of certification fee</td>
+      <td>1 year</td>
+      <td>9/23/2016</td>
+      <td>9/22/2017</td>
+      <td>viol1</td>
+      <td>Florida</td>
+      <td>True</td>
+      <td>FL</td>
+      <td>...</td>
+      <td>3</td>
+      <td>Y</td>
+      <td>12.68</td>
+      <td>12.68</td>
+      <td>55.0</td>
+      <td>18632732686</td>
+      <td>NaN</td>
+      <td>https://seasonaljobs.dol.gov/</td>
+      <td>7</td>
+      <td>both</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 150 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15243,6 +17827,208 @@ of the employer name fields in each dataset</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>(your interpretation here)</p>
+<p>The initial name cleaning did not result in any more matches.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## pattern for regex matching</span>
+<span class="n">EV_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;(\.|\s+LLP)&quot;</span>
+
+<span class="c1">## substitute the pattern with an empty string</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;name_clean_2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">EV_pattern</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">]]</span>
+
+<span class="c1">## check if the captured group with the patter is substituted with an empty string</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="n">debar_clean</span><span class="o">.</span><span class="n">name_clean</span> <span class="o">==</span> <span class="s2">&quot;SLASH E.V. RANCH LLP&quot;</span><span class="p">][[</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;name_clean&#39;</span><span class="p">,</span> <span class="s1">&#39;name_clean_2&#39;</span><span class="p">]]</span>
+
+<span class="c1">## left merge the two datasets</span>
+<span class="n">left_merged_df</span> <span class="o">=</span> <span class="n">jobs</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">debar_clean</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;name_clean&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;name_clean_2&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">indicator</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;_jobs&#39;</span><span class="p">,</span> <span class="s1">&#39;_debar&#39;</span><span class="p">))</span>
+<span class="n">left_merged_df</span><span class="p">[</span><span class="n">left_merged_df</span><span class="p">[</span><span class="s1">&#39;_merge&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;both&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Name</th>
+      <th>name_clean</th>
+      <th>name_clean_2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>20</th>
+      <td>SLASH E.V. RANCH LLP</td>
+      <td>SLASH E.V. RANCH LLP</td>
+      <td>SLASH EV RANCH</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CASE_NUMBER</th>
+      <th>CASE_STATUS</th>
+      <th>RECEIVED_DATE</th>
+      <th>DECISION_DATE</th>
+      <th>TYPE_OF_EMPLOYER_APPLICATION</th>
+      <th>H2A_LABOR_CONTRACTOR</th>
+      <th>NATURE_OF_TEMPORARY_NEED</th>
+      <th>EMERGENCY_FILING</th>
+      <th>EMPLOYER_NAME</th>
+      <th>TRADE_NAME_DBA</th>
+      <th>...</th>
+      <th>Duration</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th>violation_number</th>
+      <th>State</th>
+      <th>State_long_indicator</th>
+      <th>State_cleaned</th>
+      <th>name_clean_debar</th>
+      <th>name_clean_2</th>
+      <th>_merge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>791</th>
+      <td>H-300-20287-876656</td>
+      <td>Determination Issued - Certification</td>
+      <td>2020-10-20 09:20:32.010</td>
+      <td>2020-11-09 00:00:00.000</td>
+      <td>Individual Employer</td>
+      <td>Y</td>
+      <td>Seasonal</td>
+      <td>Y</td>
+      <td>RAFAEL BARAJAS</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>1 year</td>
+      <td>9/23/2016</td>
+      <td>9/22/2017</td>
+      <td>viol1</td>
+      <td>Florida</td>
+      <td>True</td>
+      <td>FL</td>
+      <td>RAFAEL BARAJAS</td>
+      <td>RAFAEL BARAJAS</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <th>1115</th>
+      <td>H-300-20306-894148</td>
+      <td>Determination Issued - Certification</td>
+      <td>2020-11-02 18:11:29.140</td>
+      <td>2020-11-24 00:00:00.000</td>
+      <td>Individual Employer</td>
+      <td>N</td>
+      <td>Seasonal</td>
+      <td>N</td>
+      <td>SLASH EV RANCH</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>1 year</td>
+      <td>11/15/2014</td>
+      <td>11/14/2015</td>
+      <td>viol1</td>
+      <td>CO</td>
+      <td>False</td>
+      <td>CO</td>
+      <td>SLASH E.V. RANCH LLP</td>
+      <td>SLASH EV RANCH</td>
+      <td>both</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 152 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The cleaning of the Name and EMPLOYER_NAME columns improved the match results as it made it easier to identify the same employer (i,e <code>SLASH EV RANCH</code>) in both datasets by removing inconsistencies in the way the name was written.</p>
 
 </div>
 </div>
@@ -15272,7 +18058,7 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15284,15 +18070,60 @@ of the employer name fields in each dataset</p>
 <span class="n">neg_example</span> <span class="o">=</span> <span class="s2">&quot;CISCO PRODUCE INC&quot;</span>
 
 <span class="c1">## your code here to define the pattern</span>
+<span class="c1">## When using parentheses to group parts of a regex pattern, all matched content will be captured, not just the grouped parts. </span>
+<span class="c1">## The grouped content, however, will be accessible as separate elements within the match object or match list, depending on </span>
+<span class="c1">## the method used (e.g. re.search or re.findall).</span>
+<span class="n">company_individual_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(.*)\s+\(COMPANY\)\s+AND\s+(.*)\s+\(INDIVIDUAL\)&#39;</span>
 
 <span class="c1">## your code here to apply it to the pos_example</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">company_individual_pattern</span><span class="p">,</span> <span class="n">pos_example</span><span class="p">)</span>
 
 <span class="c1">## your code here to apply it to the negative example</span>
+<span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">company_individual_pattern</span><span class="p">,</span> <span class="n">neg_example</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[(&#39;COUNTY FAIR FARM&#39;, &#39;ANDREW WILLIAMSON&#39;)]</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[]</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15320,6 +18151,9 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<span class="n">debar_clean</span><span class="p">[[</span><span class="s1">&#39;co_name&#39;</span><span class="p">,</span> <span class="s1">&#39;ind_name&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">company_individual_pattern</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;co_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># fill the empty cells with the original name</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;ind_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">debar_clean</span><span class="p">[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># fill the empty cells with the original name</span>
 </pre></div>
 
      </div>
@@ -15346,7 +18180,7 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15355,6 +18189,8 @@ of the employer name fields in each dataset</p>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="n">debar_clean</span><span class="o">.</span><span class="n">name_clean</span> <span class="o">==</span> <span class="n">pos_example</span><span class="p">][[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">,</span> <span class="s1">&#39;co_name&#39;</span><span class="p">,</span> <span class="s1">&#39;ind_name&#39;</span><span class="p">,</span> <span class="s1">&#39;Violation&#39;</span><span class="p">]]</span>
+<span class="n">debar_clean</span><span class="p">[</span><span class="n">debar_clean</span><span class="o">.</span><span class="n">name_clean</span> <span class="o">==</span> <span class="n">neg_example</span><span class="p">][[</span><span class="s1">&#39;name_clean&#39;</span><span class="p">,</span> <span class="s1">&#39;co_name&#39;</span><span class="p">,</span> <span class="s1">&#39;ind_name&#39;</span><span class="p">,</span> <span class="s1">&#39;Violation&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
@@ -15362,17 +18198,118 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name_clean</th>
+      <th>co_name</th>
+      <th>ind_name</th>
+      <th>Violation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>108</th>
+      <td>COUNTY FAIR FARM (COMPANY) AND ANDREW WILLIAMS...</td>
+      <td>COUNTY FAIR FARM</td>
+      <td>ANDREW WILLIAMSON</td>
+      <td>WHD Debarment</td>
+    </tr>
+  </tbody>
+</table>
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div>
 
 </div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name_clean</th>
+      <th>co_name</th>
+      <th>ind_name</th>
+      <th>Violation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>19</th>
+      <td>CISCO PRODUCE INC</td>
+      <td>CISCO PRODUCE INC</td>
+      <td>CISCO PRODUCE INC</td>
+      <td>Failure to respond to audit (no response)</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>CISCO PRODUCE INC</td>
+      <td>CISCO PRODUCE INC</td>
+      <td>CISCO PRODUCE INC</td>
+      <td>Impeding the Audit Process – Non- Response</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 </div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15403,7 +18340,7 @@ of the employer name fields in each dataset</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">georgia_jobs</span> <span class="o">=</span> <span class="n">jobs</span><span class="p">[</span><span class="n">jobs</span><span class="o">.</span><span class="n">EMPLOYER_STATE</span> <span class="o">==</span> <span class="s1">&#39;GA&#39;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15411,6 +18348,1488 @@ of the employer name fields in each dataset</p>
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## NOTE: This code will takes approximately 50 seconds to run as getting the geolocation of each address is a slow process (API limiation)</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">get_geolocation</span><span class="p">(</span><span class="n">address</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://nominatim.openstreetmap.org/search?q=</span><span class="si">{</span><span class="n">address</span><span class="si">}</span><span class="s2">&amp;format=json&amp;limit=1&quot;</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
+        <span class="n">latitude</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
+        <span class="n">longitude</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">latitude</span><span class="p">,</span> <span class="n">longitude</span>
+    <span class="k">return</span> <span class="p">[]</span>
+
+<span class="n">geo_addresses</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">add</span> <span class="ow">in</span> <span class="n">georgia_jobs</span><span class="p">[</span><span class="s1">&#39;EMPLOYER_ADDRESS_1&#39;</span><span class="p">]:</span>
+    <span class="n">geo_addresses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_geolocation</span><span class="p">(</span><span class="n">add</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## You might need to install folium library for the visualization</span>
+<span class="c1"># !pip install folium</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">folium</span>
+
+<span class="n">map_georgia</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">33.247875</span><span class="p">,</span> <span class="o">-</span><span class="mf">83.441162</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">loc</span> <span class="ow">in</span> <span class="n">geo_addresses</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">loc</span><span class="p">:</span>
+        <span class="n">lat</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">lon</span> <span class="o">=</span> <span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">folium</span><span class="o">.</span><span class="n">CircleMarker</span><span class="p">([</span><span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">],</span> <span class="n">radius</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fill_color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">fill_opacity</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map_georgia</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c20b9a30&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7a30&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86a0be1430&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c20b9df0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86a0bf0d30&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c20b98b0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86a0be32b0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86a0bf00a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe77f0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7820&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7ac0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7b20&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7d00&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86a0bb1f10&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7c70&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7a60&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7850&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7f10&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86b067f2e0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe78b0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047160&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30473d0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30472e0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047070&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047e80&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047fa0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7880&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047130&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047370&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047ee0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047f10&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047790&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047bb0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047ac0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047b80&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047c70&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047250&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047460&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047310&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c2fe7c10&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047400&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30473a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047220&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30479a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047760&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047fd0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047a60&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047dc0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047df0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30476a0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047640&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047610&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30472b0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047580&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047850&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047d60&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047cd0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047040&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30471f0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047a30&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30478e0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c30470d0&gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;folium.vector_layers.CircleMarker at 0x7f86c3047d00&gt;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## save the map to an html file</span>
+<span class="c1">## please copy the path of the html file and view it in your browser</span>
+<span class="n">map_georgia</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;jobs_in_GA.html&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Alternatively, you can load the map directly in the notebook, but the html file looks better so we recommend you open it in your browser</span>
+<span class="n">map_georgia</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_ed5d8910ea04fadbfe6c05fdafe3fe0e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_ed5d8910ea04fadbfe6c05fdafe3fe0e&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_ed5d8910ea04fadbfe6c05fdafe3fe0e = L.map(
+                &quot;map_ed5d8910ea04fadbfe6c05fdafe3fe0e&quot;,
+                {
+                    center: [33.247875, -83.441162],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b6333b123127aa9577266fd28c0c942f = L.tileLayer(
+                &quot;https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;Data by \u0026copy; \u003ca target=\&quot;_blank\&quot; href=\&quot;http://openstreetmap.org\&quot;\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\&quot;_blank\&quot; href=\&quot;http://www.openstreetmap.org/copyright\&quot;\u003eODbL\u003c/a\u003e.&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 18, &quot;maxZoom&quot;: 18, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_e8a0046868b063b99d90a1fd00ced9d6 = L.circleMarker(
+                [32.270576504613274, -82.2586833307103],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_080245e8ad1320ffc63bbba007a1ecaf = L.circleMarker(
+                [32.553645523349275, -83.80071037863027],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_f199c47308dc051b4547517da7b2daab = L.circleMarker(
+                [37.946630718668054, -121.69731909510904],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_8e61b5d0f315c93499ddaba54cc6bc39 = L.circleMarker(
+                [37.946630718668054, -121.69731909510904],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_306ab581e886858640e1656551071c76 = L.circleMarker(
+                [30.4674042, -97.953131],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_5a35d9d717dd5d943d5f4393e1d929bf = L.circleMarker(
+                [32.11300020535304, -82.22728546877391],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_1c3787c0401b605071be24da77c610db = L.circleMarker(
+                [38.20590695619727, -120.37237235236859],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_020173bcb9e74fecfc40aba67c5eb35a = L.circleMarker(
+                [32.224772, -82.129802],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_53c3d842db71077cbbfa6f5ccace5697 = L.circleMarker(
+                [31.0762859, -83.394542],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_a4f231803def5e781e0c6268d6db97e7 = L.circleMarker(
+                [31.582146163265303, -83.98761126530613],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_6931c6077c2ff694c3c2f25cadb9766d = L.circleMarker(
+                [41.682872200000006, -70.93950505000001],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_cfd2d186f46778d7b7024a8ae923a668 = L.circleMarker(
+                [31.7902269, -82.3517574],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_5139062df89f74f3e976ece5ca523f07 = L.circleMarker(
+                [38.891919, -86.766876],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_bd3a505f8ee3464d381f7c0ab49e1c10 = L.circleMarker(
+                [31.326278483239296, -83.58703448550895],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_c322107c408cc3e0e6c38c5c50b400d4 = L.circleMarker(
+                [32.016598, -82.36939],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_7fa5994833904bd3a6c0645f335920ed = L.circleMarker(
+                [45.0545681, -92.812819],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_775b8a336afc2dd007732748c572774a = L.circleMarker(
+                [41.678208363636365, -83.56806087878788],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_9bf723b4105ad192b4fe13cb63810021 = L.circleMarker(
+                [41.3531899, -72.0785314],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_27cd92510e120659353f923351b6357c = L.circleMarker(
+                [32.11300020535304, -82.22728546877391],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_5c007bee90ef9f806590e17eb4d5526b = L.circleMarker(
+                [33.892596573886046, -83.94292102799122],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_13df8f1c183e11ff17cec74384e60b2c = L.circleMarker(
+                [29.3409208, -81.1417671],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_fb544c07dcfd114a78e3245cdeb4fd0c = L.circleMarker(
+                [51.5406241, -2.4056661],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_4a455c29a82367190cae4a639fbaefe3 = L.circleMarker(
+                [34.68760772406251, -85.30175500514089],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_03255b73bf1a6a567bd3badc87747283 = L.circleMarker(
+                [34.94815867533928, -90.02876706300638],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_9538326b53451a963aa1cb532a1da3ff = L.circleMarker(
+                [34.12135902723758, -78.68374259790417],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_568719db817cf956ce21cde9c0b7af6d = L.circleMarker(
+                [34.94815867533928, -90.02876706300638],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_198e3a2c3793d0d20e7d6794d736fe3a = L.circleMarker(
+                [31.3994608761254, -82.17862430832274],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_aaae004e9dd51e822520a842b38c94b0 = L.circleMarker(
+                [31.447800014103468, -83.61515947778126],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_69880973c83ebedcb99d21b9012234c2 = L.circleMarker(
+                [30.423809, -84.373055],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_c7dc196107113cefdaaaba28d25bbb3f = L.circleMarker(
+                [33.726, -84.8307158],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_a97bf4239b0b066d7f37b0accb381c2c = L.circleMarker(
+                [34.07028665375039, -83.72058972207147],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_5253dc8bc183fa61976e0631f94ff85c = L.circleMarker(
+                [45.0545681, -92.812819],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_65aaabea6bd362bdf9be4d20bfb06a87 = L.circleMarker(
+                [32.796675233108026, -84.02787623572372],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_50cec44e70a755414fe6810a3726cd4a = L.circleMarker(
+                [34.820185569312734, -83.97927819823364],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_730c2243dd223e936084680a670dec85 = L.circleMarker(
+                [37.84280108163265, -94.71340967346939],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_3260905c3eda4cabbbc961cac9f4e958 = L.circleMarker(
+                [37.519173365604665, -77.43731228650077],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_3736572b5d56eb33542c12eca9eadb52 = L.circleMarker(
+                [45.60542081416318, -76.88965497671333],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_83d5492efb120d216cc673013d76b326 = L.circleMarker(
+                [32.99252246555584, -83.0608571150044],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_c784a35b9617f3ff2211c060fd558e98 = L.circleMarker(
+                [31.20900504450461, -83.58425666986196],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_6e9cf74699c3bff01612762aac61fb97 = L.circleMarker(
+                [52.4291772, -1.9305870233875453],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_b5a1146babf829e2744bd556ed5a032f = L.circleMarker(
+                [44.64977110700302, -84.58618485217265],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_f0529d36ff571ceca12dc62d34a494cb = L.circleMarker(
+                [32.6119251, -83.9836788],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_760830520dbe57ee369215ed7c1e052b = L.circleMarker(
+                [41.3531899, -72.0785314],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_ed19d0e0f0318631de710fadc765894e = L.circleMarker(
+                [33.18277037466151, -84.12712853500182],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_c85d97cbc23b2be1c60df7f8eb2eac18 = L.circleMarker(
+                [33.84943651467278, -84.96123679627014],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_0b32d35fc640c357f819e0fab85a54fa = L.circleMarker(
+                [36.081862, -92.584333],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_973f834b2fdb89cac1bd8fb7f6c84abd = L.circleMarker(
+                [44.7455185, -63.38246849999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_b1ef1c94a127602f581e4ce49e8c7aed = L.circleMarker(
+                [34.42172324363499, -83.65155003552191],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_1ceb89a0fa54c24b2c2023f87f92f41b = L.circleMarker(
+                [31.739872282097803, -82.36391251547961],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_498f4bc32331983ed4b0ddb0e659912c = L.circleMarker(
+                [33.83929343882014, -83.1529812052776],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_8d142926b6e4567f656bdba30d28a211 = L.circleMarker(
+                [45.60733509154393, -76.88669964983096],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_3d24cf0db234ffe80d860f5b2829a446 = L.circleMarker(
+                [31.426023890115317, -82.13337370692051],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_66d5888f11ea65fa73ebbcee91bace03 = L.circleMarker(
+                [38.7727307, -77.45771056245454],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_769f75602440fb9711dd92579e1e8dcc = L.circleMarker(
+                [45.11642207982682, -63.09514053802211],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_0dd1fe1a950d33551376a894b2dd4a48 = L.circleMarker(
+                [36.366504, -92.551919],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_e0912227cf4deef219eb14828beb33ff = L.circleMarker(
+                [30.4674042, -97.953131],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_d963980f76a3d118df87e7e72e0766c6 = L.circleMarker(
+                [26.824619939732308, -80.11478243854175],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_07b69ddc8e2b24a3e4aace55d90acd82 = L.circleMarker(
+                [33.46907170048546, -84.08871044770433],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_11ccd3ac769ddacac8d53e2a856ed810 = L.circleMarker(
+                [34.820185569312734, -83.97927819823364],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_512c575f443c90a7fb2e9969aac003ae = L.circleMarker(
+                [35.8573645, -90.7787904],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_3df35ce62619f1ffda481f82cce6b913 = L.circleMarker(
+                [33.608727, -99.379961],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_4ca1a556c3c69b026d87455017101bd0 = L.circleMarker(
+                [33.504705013646294, -84.85648309749384],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+    
+            var circle_marker_4095edd92a219f0262208be8748a5942 = L.circleMarker(
+                [32.61005692745695, -82.48487636115858],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 1, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_ed5d8910ea04fadbfe6c05fdafe3fe0e);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Please note that some of the geocoded addresses may not be located in Georgia. This could be due to limitations in the accuracy of the conversion API or incorrect addresses in the original dataset.</p>
+
+</div>
+</div>
+</div>
 </div>
 </body>
 
