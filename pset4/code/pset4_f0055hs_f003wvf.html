@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>pset4_blank</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>pset4_f0055hs_f003wvf</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14559,12 +14559,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: {
-                    automatic: true
+                    linebreaks: { 
+                    automatic: true 
                     }
                 }
             });
-
+        
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14671,7 +14671,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14680,10 +14680,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## first, unzip the file pset4_inputdata.zip </span>
+<span class="c1"># !unzip ../input/pset4_inputdata.zip -d ../input/ # uncomment to unzip</span>
+
 <span class="c1">## then, run this code to load the unzipped json file and convert to a dataframe</span>
 <span class="c1">## (may need to change the pathname depending on where you store stuff)</span>
 <span class="c1">## and convert some of the attributes from lists to values</span>
-<span class="n">doj</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s2">&quot;../data/combined.json&quot;</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">doj</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s2">&quot;../input/combined.json&quot;</span><span class="p">,</span> <span class="n">lines</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 
 <span class="c1">## due to json, topics are in a list so remove them and concatenate with ;</span>
 <span class="n">doj</span><span class="p">[</span><span class="s1">&#39;topics_clean&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">topic</span><span class="p">)</span> 
@@ -14707,6 +14709,104 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>title</th>
+      <th>contents</th>
+      <th>date</th>
+      <th>topics_clean</th>
+      <th>components_clean</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>None</td>
+      <td>Convicted Bomb Plotter Sentenced to 30 Years</td>
+      <td>PORTLAND, Oregon. – Mohamed Osman Mohamud, 23, who was convicted in 2013 of attempting to use a weapon of mass destruction (explosives) in connection with a plot to detonate a vehicle bomb at an annual Christmas tree lighting ceremony in Portland, was sentenced today to serve 30 years in prison, followed by a lifetime term of supervised release. Mohamud, a naturalized U.S. citizen from Somalia and former resident of Corvallis, Oregon, was arrested on Nov. 26, 2010, after he attempted to detonate what he believed to be an explosives-laden van that was parked near the tree lighting ceremony in Portland.  The arrest was the culmination of a long-term undercover operation, during which Mohamud was monitored closely for months as his bomb plot developed.  The device was in fact inert, and the public was never in danger from the device. At sentencing, United States District Court Judge Garr M. King, who presided over Mohamed’s 14-day trial, said “the intended crime was horrific,” and that the defendant, even though he was presented with options by undercover FBI employees, “never once expressed a change of heart.”  King further noted that the Christmas tree ceremony was attended by up to 10,000 people, and that the defendant “wanted everyone to leave either dead or injured.”  King said his sentence was necessary in view of the seriousness of the crime and to serve as deterrence to others who might consider similar acts.     “With today’s sentencing, Mohamed Osman Mohamud is being held accountable for his attempted use of what he believed to be a massive bomb to attack innocent civilians attending a public Christmas tree lighting ceremony in Portland,” said John P. Carlin, Assistant Attorney General for National Security.  “The evidence clearly indicated that Mohamud was intent on killing as many people as possible with his attack.  Fortunately, law enforcement was able to identify him as a threat, insert themselves in the place of a terrorist that Mohamud was trying to contact, and thwart Mohamud’s efforts to conduct an attack on our soil.  This case highlights how the use of undercover operations against would-be terrorists allows us to engage and disrupt those who wish to commit horrific acts of violence against the innocent public.  The many agents, analysts, and prosecutors who have worked on this case deserve great credit for their roles in protecting Portland from the threat posed by this defendant and ensuring that he was brought to justice.” “This trial provided a rare glimpse into the techniques Al Qaeda employs to radicalize home-grown extremists,” said Amanda Marshall, U.S. Attorney for the District of Oregon.  “With the sentencing today, the court has held this defendant accountable.   I thank the dedicated professionals in the law enforcement and intelligence communities who were responsible for this successful outcome.  I look forward to our continued work with Muslim communities in Oregon who are committed to ensuring that all young people are safe from extremists who seek to radicalize others to engage in violence.”  According to the trial evidence, in February 2009, Mohamud began communicating via e-mail with Samir Khan, a now-deceased al Qaeda terrorist who published Jihad Recollections, an online magazine that advocated violent jihad, and who also published Inspire, the official magazine of al-Qaeda in the Arabian Peninsula.  Between February and August 2009, Mohamed exchanged approximately 150 emails with Khan.  Mohamud wrote several articles for Jihad Recollections that were published under assumed names. In August 2009, Mohamud was in email contact with Amro Al-Ali, a Saudi national who was in Yemen at the time and is today in custody in Saudi Arabia for terrorism offenses.  Al-Ali sent Mohamud detailed e-mails designed to facilitate Mohamud’s travel to Yemen to train for violent jihad.  In December 2009, while Al-Ali was in the northwest frontier province of Pakistan, Mohamud and Al-Ali discussed the possibility of Mohamud traveling to Pakistan to join Al-Ali in terrorist activities. Mohamud responded to Al-Ali in an e-mail: “yes, that would be wonderful, just tell me what I need to do.”  Al-Ali referred Mohamud to a second associate overseas and provided Mohamud with a name and email address to facilitate the process. In the following months, Mohamud made several unsuccessful attempts to contact Al-Ali’s associate.  Ultimately, an FBI undercover operative contacted Mohamud via email under the guise of being an associate of Al-Ali’s.  Mohamud and the FBI undercover operative agreed to meet in Portland in July 2010.  At the meeting, Mohamud told the FBI undercover operative he had written articles that were published in Jihad Recollections.  Mohamud also said that he wanted to become “operational.”  Asked what he meant by “operational,” Mohamud said he wanted to put an explosion together, but needed help. According to evidence presented at trial, at a meeting in August 2010, Mohamud told undercover FBI operatives he had been thinking of committing violent jihad since the age of 15.  Mohamud then told the undercover FBI operatives that he had identified a potential target for a bomb: the annual Christmas tree lighting ceremony in Portland’s Pioneer Courthouse Square on Nov. 26, 2010.  The undercover FBI operatives cautioned Mohamud several times about the seriousness of this plan, noting there would be many people at the event, including children, and emphasized that Mohamud could abandon his attack plans at any time with no shame.  Mohamud indicated the deaths would be justified and that he would not mind carrying out a suicide attack on the crowd. According to evidence presented at trial, in the ensuing months Mohamud continued to express his interest in carrying out the attack and worked on logistics.  On Nov. 4, 2010, Mohamud and the undercover FBI operatives traveled to a remote location in Lincoln County, Oregon, where they detonated a bomb concealed in a backpack as a trial run for the upcoming attack.  During the drive back to Corvallis, Mohamud was asked if was capable looking at all the bodies of those who would be killed during the explosion.  In response, Mohamud noted, “I want whoever is attending that event to be, to leave either dead or injured.”  Mohamud later recorded a video of himself, with the assistance of the undercover FBI operatives, in which he read a statement that offered his rationale for his bomb attack.  On Nov. 18, 2010, undercover FBI operatives picked up Mohamud to travel to Portland to finalize the details of the attack.  On Nov. 26, 2010, just hours before the planned attack, Mohamud examined the 1,800 pound bomb in the van and remarked that it was “beautiful.”  Later that day, Mohamud was arrested after he attempted to remotely detonate the inert vehicle bomb rked near the Christmas tree lighting ceremony This case was investigated by the FBI, with assistance from the Oregon State Police, the Corvallis Police Department, the Lincoln County Sheriff’s Office and the Portland Police Bureau.  The prosecution was handled by Assistant U.S. Attorneys Ethan D. Knight and Pamala Holsinger from the U.S. Attorney’s Office for the District of Oregon.  Trial Attorney Jolie F. Zimmerman, from the Counterterrorism Section of the Justice Department’s National Security Division, assisted. # # # 14-1077</td>
+      <td>2014-10-01T00:00:00-04:00</td>
+      <td>No topic</td>
+      <td>National Security Division (NSD)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12-919</td>
+      <td>$1 Million in Restitution Payments Announced to Preserve North Carolina Wetlands</td>
+      <td>WASHINGTON – North Carolina’s Waccamaw River watershed will benefit from a $1 million restitution order from a federal court, funding environmental projects to acquire and preserve wetlands in an area damaged by illegal releases of wastewater from a corporate hog farm, announced Ignacia S. Moreno, Assistant Attorney General of the Justice Department’s Environment and Natural Resources Division; U.S. Attorney for the Eastern District of North Carolina Thomas G. Walker; Director Greg McLeod from the North Carolina State Bureau of Investigation; and Camilla M. Herlevich, Executive Director of the North Carolina Coastal Land Trust.   Freedman Farms Inc. was sentenced in February 2012 to five years of probation and ordered to pay $1.5 million in fines, restitution and community service payments for violating the Clean Water Act when it discharged hog waste into a stream that leads to the Waccamaw River.  William B. Freedman, president of Freedman Farms, was sentenced to six months in prison to be followed by six months of home confinement.  Freedman Farms also is required to implement a comprehensive environmental compliance program and institute an annual training program.   In an order issued on April 19, 2012, the court ordered that the defendants would be responsible for restitution of $1 million in the form of five annual payments starting in January 2013, which the court will direct to the North Carolina Coastal Land Trust (NCCLT).  The NCCLT plans to use the money to acquire and conserve land along streams in the Waccamaw watershed.  The court also directed a $75,000 community service payment to the Southern Environmental Enforcement Network, an organization dedicated to environmental law enforcement training and information sharing in the region.    “The resolution of the case against Freedman Farms demonstrates the commitment of the Department of Justice to enforcing the Clean Water Act to ensure the protection of human health and the environment,” said Assistant Attorney General Moreno.  “The court-ordered restitution in this case will conserve wetlands for the benefit of the people of North Carolina.  By enforcing the nation’s environmental laws, we will continue to ensure that concentrated animal feeding operations (CAFOs) operate without threatening our drinking water, the health of our communities and the environment.”   “This office is committed to doing our part to hold accountable those who commit crimes against our environment, which can cause serious health problems to residents and damage the environment that makes North Carolina such a beautiful place to live and visit,” said U.S. Attorney Walker.   “This case shows what we can accomplish when our SBI agents work closely with their local, state and federal partners to investigate environmental crimes and hold the polluters accountable,” said Director McLeod.  “We’ll continue our efforts to fight illegal pollution that damages our water and puts the public’s health at risk.”    “The Waccamaw is unique and wild,” said Director Herlevich of the North Carolina Coastal Land Trust. “Its watershed includes some of the most extensive cypress gum swamps in the state, and its headwaters at Lake Waccamaw contain fish that are found nowhere else on Earth.  We appreciate the trust of the court and the U. S. Attorney, and we look forward to using these funds for conservation projects in a river system that is one of our top conservation priorities.”   According to evidence presented in court, in December 2007 Freedman Farms discharged hog waste into Browder’s Branch, a tributary to the Waccamaw River that flows through the White Marsh, a large wetlands complex.  Freedman Farms, located in Columbus County, N.C., is in the business of raising hogs for market, and this particular farm had some 4,800 hogs.  The hog waste was supposed to be directed to two lagoons for treatment and disposal.  Instead, hog waste was discharged from Freedman Farms directly into Browder’s Branch.    The Clean Water Act is a federal law that makes it illegal to knowingly or negligently discharge a pollutant into a water of the United States.    The Freedman case was investigated by the U.S. Environmental Protection Agency (EPA) Criminal Investigation Division, the U.S. Army Corps of Engineers and the North Carolina State Bureau of Investigation, with assistance from the EPA Science and Ecosystem Support Division.  The case was prosecuted by Assistant U.S. Attorney J. Gaston B. Williams of the Eastern District of North Carolina and Trial Attorney Mary Dee Carraway of the Environmental Crimes Section of the Justice Department’s Environment and Natural Resources Division.   The North Carolina Coastal Land Trust is celebrating its 20th anniversary of saving special lands in eastern North Carolina. The organization has protected nearly 50,000 acres of lands with scenic, recreational, historic and ecological values. North Carolina Coastal Land Trust has saved streams and wetlands that provide clean water, forests that are havens for wildlife, working farms that provide local food and nature parks that everyone can enjoy.  More information about the Coastal Land Trust is available at www.coastallandtrust.org.</td>
+      <td>2012-07-25T00:00:00-04:00</td>
+      <td>No topic</td>
+      <td>Environment and Natural Resources Division</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11-1002</td>
+      <td>$1 Million Settlement Reached for Natural Resource Damages at Superfund Site in Massachusetts</td>
+      <td>BOSTON– A $1-million settlement has been reached for natural resource damages (NRD) at the Blackburn &amp; Union Privileges Superfund Site in Walpole, Mass., the Departments of Justice and Interior (DOI), and the Office of the Massachusetts Attorney General announced today.                The Blackburn &amp; Union Privileges Superfund Site includes 22 acres of contaminated land and water in Walpole. The contamination resulted from the operations of various industrial facilities dating back to the 19th century that exposed the site to asbestos, arsenic, lead and other hazardous substances.                The private parties involved in the settlement include two former owners and operators of the site, W.R. Grace &amp; Co.– Conn. and Tyco Healthcare Group LP, as well as the current owners, BIM Investment Corp. and Shaffer Realty Nominee Trust.               From about 1915 to 1936, a predecessor of W.R. Grace manufactured asbestos brake linings and clutch linings on a large portion of the property. From 1946 to about 1983, a predecessor of Tyco Healthcare operated a cotton fabric manufacturing business, which used caustic solutions, on a portion of the property.               In a 2010 settlement with U.S. Environmental Protection Agency (EPA), the four private parties agreed to perform a remedial action to clean up the site at an estimated cost of $13 million. The consent decree lodged today resolves both state and federal NRD liability claims; it requires the parties to pay $1,094,169.56 to the state and federal natural resource trustees, the Massachusetts Executive Office of Energy and Environmental Affairs (EEA) and DOI, for injuries to ecological resources including groundwater and wetlands, which provide habitat for waterfowl and wading birds, including black ducks and great blue herons.  The trustees will use the settlement funds for natural resource restoration projects in the area.               “This settlement demonstrates our commitment to recovering damages from the parties responsible for injury to natural resources, in partnership with state trustees,” said Bruce Gelber, Acting Deputy Assistant Attorney General of the Justice Department’s Environment and Natural Resources Division.               “The citizens of Walpole have had to live with the environmental impact of this contamination for many years,” Attorney General Martha Coakley said. “We are pleased that today’s agreement will not only require the responsible parties to reimburse taxpayer dollars, but will also provide funding to begin restoring or replacing the wetland and other natural resources.”                 The consent decree was lodged in the U.S. District Court for Massachusetts.     A portion of the funds, $300,000, will be distributed to the EEA-sponsored groundwater restoration projects; $575,000 will be used for ecological restoration projects jointly sponsored by EEA and the U.S. Fish and Wildlife Service (FWS).               In addition, $125,000 will go for projects jointly sponsored by EEA and FWS that achieve both ecological and groundwater restoration; $57,491.34 will be allocated for reimbursement for the FWS’s assessment costs; and $36,678.22 will be distributed as reimbursement for the commonwealth’s assessment costs.       “This settlement provides the means for a range of projects designed to compensate the public for decades of groundwater and other ecological damage at this site.  I encourage local citizens and organizations to become engaged in the public process that will take place as we solicit, take comment on, and choose these projects in the months ahead,” said Energy and Environmental Affairs Secretary Richard K. Sullivan Jr., who serves as the Commonwealth’s Natural Resources Damages trustee.       “This settlement will help restore habitat for fish and wildlife in the Neponset River watershed,” said Tom Chapman of the FWS New England Field Office. “We look forward to working with the commonwealth and local stakeholders to implement restoration.”               “More than 100 years-worth of industrial activities at this site caused major environmental contamination to the Neponset River, nearby wetlands and to groundwater below the site,” said Commissioner Kenneth Kimmell of the Massachusetts Department of Environmental Protection (MassDEP), which will staff the Trustee Council for the Commonwealth. “We will ensure that the community and the public will be active participants in the process to use these NRD funds to restore the injured natural resources.”                Under the federal Comprehensive Environmental Response, Compensation and Liability Act, EEA and DOI, acting through the FWS, are the designated state and federal natural resource Trustees for the site. The site has been listed on the EPA’s National Priorities List since 1994.        The consent decree is subject to a public comment period and court approval. A copy of the consent decree and instructions about how to submit comments is available on www.usdoj.gov/enrd/Consent_Decrees.html  .               After the consent decree is approved, EEA and FWS will develop proposed restoration plans to use the settlement funds for restoration projects. The proposed restoration plans will also be made available to the public for review and comment.                Assistant Attorney General Matthew Brock of Massachusetts Attorney General Coakley's Environmental Protection Division handled this matter.  Attorney Jennifer Davis of MassDEP, Attorney Anna Blumkin of EEA and MassDEP’s NRD Coordinator Karen Pelto also worked on this settlement.</td>
+      <td>2011-08-03T00:00:00-04:00</td>
+      <td>No topic</td>
+      <td>Environment and Natural Resources Division</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10-015</td>
+      <td>10 Las Vegas Men Indicted \r\nfor Falsifying Vehicle Emissions Tests</td>
+      <td>WASHINGTON—A federal grand jury in Las Vegas today returned indictments against 10 Nevada-certified emissions testers for falsifying vehicle emissions test reports, the Justice Department announced.   Each defendant faces one felony Clean Air Act count for falsifying reports between November 2007 and May 2009. The number of falsifications varied by defendant, with some defendants having falsified approximately 250 records, while others falsified more than double that figure. One defendant is alleged to have falsified over 700 reports.   The individuals indicted include:     Escudero resides in Pahrump, Nev. All other individuals are from Clark County, Nev.    The 10 defendants are alleged to have engaged in a practice known as "clean scanning" vehicles. The scheme involved entering the Vehicle Identification Number (VIN) for a vehicle that would not pass the emissions test into the computerized system, then connecting a different vehicle the testers knew would pass the test. These falsifications were allegedly performed for anywhere from $10 to $100 over and above the usual emissions testing fee.    The U.S. Environmental Protection Agency (EPA), under the Clean Air Act, requires the state of Nevada to conduct vehicle emissions testing in certain areas because the areas exceed national standards for carbon monoxide and ozone. Las Vegas is currently required to perform emissions testing.    To obtain a registration renewal, vehicle owners bring the vehicles to a licensed inspection station for testing. The emissions inspector logs into a computer to activate the system by using a unique password issued to the emissions inspector. The emissions inspector manually inputs the vehicle’s VIN to identify the tested vehicle, then connects the vehicle for model year 1996 and later to an onboard diagnostics port connected to an analyzer. The analyzer downloads data from the vehicle’s computer, analyzes the data and provides a "pass" or "fail" result. The pass or fail result and vehicle identification data are reported on the Vehicle Inspection Report. It is a crime to knowingly alter or conceal any record or other document required to be maintained by the Clean Air Act.     "Falsifications of vehicle emissions testing, such as those alleged in the indictments unsealed today, are serious matters and we intend to use all of our enforcement tools to stop this harmful practice. These actions undermine a system that is designed to reduce air pollutants including smog and provide better air quality for the citizens of Nevada," said Ignacia S. Moreno, Assistant Attorney General for the Justice Department’s Environment and Natural Resources Division.    "The residents of Nevada deserve to know that the vast majority of licensed vehicle emission inspectors are not corrupt and are not circumventing emission testing procedures," said U.S. Attorney Bogden. "These indictments should serve as a clear warning to offenders that the Department of Justice will prosecute you if you make fraudulent statements and reports concerning compliance with the federal Clean Air Act."    "Lying about car emissions means dirtier air, which is especially of concern in areas like Las Vegas that are already experiencing air quality problems," said Cynthia Giles, Assistant Administrator for Enforcement and Compliance Assurance at EPA. "We will take aggressive action to ensure communities have clean air."    The maximum penalty for the felony violations contained in the indictments includes up to two years in prison and a fine of up to $250,000.    An indictment is merely an accusation, and a defendant is presumed innocent unless and until proven guilty in a court of law.    The case was investigated by the EPA, Criminal Investigation Division; and the Nevada Department of Motor Vehicles Compliance Enforcement Division. The case is being prosecuted by the U.S. Attorney’s Office for the District of Nevada and the Justice Department’s Environmental Crimes Section.</td>
+      <td>2010-01-08T00:00:00-05:00</td>
+      <td>No topic</td>
+      <td>Environment and Natural Resources Division</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>18-898</td>
+      <td>$100 Million Settlement Will Speed Cleanup Work at Centredale Manor Superfund Site in North Providence, R.I.</td>
+      <td>The U.S. Department of Justice, the U.S. Environmental Protection Agency (EPA), and the Rhode Island Department of Environmental Management (RIDEM) announced today that two subsidiaries of Stanley Black &amp; Decker Inc.—Emhart Industries Inc. and Black &amp; Decker Inc.—have agreed to clean up dioxin contaminated sediment and soil at the Centredale Manor Restoration Project Superfund Site in North Providence and Johnston, Rhode Island.  “We are pleased to reach a resolution through collaborative work with the responsible parties, EPA, and other stakeholders,” said Acting Assistant Attorney General Jeffrey H. Wood for the Justice Department's Environment and Natural Resources Division . “Today’s settlement ends protracted litigation and allows for important work to get underway to restore a healthy environment for citizens living in and around the Centredale Manor Site and the Woonasquatucket River.” “This settlement demonstrates the tremendous progress we are achieving working with responsible parties, states, and our federal partners to expedite sites through the entire Superfund remediation process,” said EPA Acting Administrator Andrew Wheeler. “The Centredale Manor Site has been on the National Priorities List for 18 years; we are taking charge and ensuring the Agency makes good on its promise to clean it up for the betterment of the environment and those communities affected.” “Successfully concluding this settlement paves the way for EPA to make good on our commitment to aggressively pursue cleaning up the Centredale Manor Superfund Site,” said EPA New England Regional Administrator Alexandra Dunn. “We are excited to get to work on the cleanup at this site, and get it closer to the goal of being fully utilized by the North Providence and Johnston communities.” “We are pleased that the collective efforts of the State of Rhode Island, EPA, and DOJ in these negotiations have concluded in this major milestone toward the cleanup of the Centredale Manor Restoration Superfund site and are consistent with our long-standing efforts to make the polluter pay,” said RIDEM Director Janet Coit. “The settlement will speed up a remedy that protects public health and the river environment, and moves us closer to the day that we can reclaim recreational uses of this beautiful river resource.” The settlement, which includes cleanup work in the Woonasquatucket River (River) and bordering residential and commercial properties along the River, requires the companies to perform the remedy selected by EPA for the Site in 2012, which is estimated to cost approximately $100 million, and resolves longstanding litigation. The cleanup remedy includes excavation of contaminated sediment and floodplain soil from the Woonasquatucket River, including from adjacent residential properties. Once the cleanup remedy is completed, full access to the Woonasquatucket River should be restored for local citizens. The cleanup will be a step toward the State’s goal of a fishable and swimmable river. The work will also include upgrading caps over contaminated soil in the peninsula area of the Site that currently house two high-rise apartment buildings. The settlement also ensures that the long-term monitoring and maintenance of the site, as directed in the remedy, will be implemented to ensure that public health is protected.  Under the settlement, Emhart and Black &amp; Decker will reimburse EPA for approximately $42 million in past costs incurred at the Site. The companies will also reimburse EPA and the State of Rhode Island for future costs incurred by those agencies in overseeing the work required by the settlement. The settlement will also include payments on behalf of two federal agencies to resolve claims against those agencies. These payments, along with prior settlements related to the Site, will result in a 100 percent recovery for the United States of its past and future response costs related to the Site. Litigation related to the Site has been ongoing for nearly eight years. While the Federal District Court found Black &amp; Decker and Emhart to be liable for their hazardous waste and responsible to conduct the cleanup of the Site, it had also ruled that EPA needed to reconsider certain aspects of that cleanup. EPA appealed the decision requiring it to reconsider aspects of the cleanup. This settlement, once entered by the District Court, will resolve the litigation between the United States, Rhode Island, and Emhart and Black and Decker, allowing the cleanup of the Site to begin. The Site spans a one and a half mile stretch of the Woonasquatucket River and encompasses a nine-acre peninsula, two ponds and a significant forested wetland. From the 1940s to the early 1970s, Emhart’s predecessor operated a chemical manufacturing facility on the peninsula and used a raw material that was contaminated with 2,3,7,8-tetrachlorodibenzo-p-dioxin, a toxic form of dioxin. The Site property was also previously used by a barrel refurbisher. Elevated levels of dioxins and other contaminants have been detected in soil, groundwater, sediment, surface water and fish.  The Site was added to the National Priorities List (NPL) in 2000, and in December 2017, EPA included the Centredale Manor Restoration Project Superfund Site on a list of Superfund sites targeted for immediate and intense attention. Several short-term actions were previously performed at the Site to address immediate threats to the residents and minimize potential erosion and downstream transport of contaminated soil and sediment. This settlement is the latest agreement EPA has reached since the Site was listed on the NPL. Prior agreements addressed the performance and recovery of costs for the past environmental investigations and interim cleanup actions from Emhart, the barrel reconditioning company, the current owners of the peninsula portion of the Site, and other potentially responsible parties. The Consent Decree, lodged in the U.S. District Court of Rhode Island, will be posted in the Federal Register and available for public comment for a period of 30 days. The Consent Decree can be viewed on the Justice Department website: www.justice.gov/enrd/Consent_Decrees.html.  EPA information on the Centredale Manor Superfund Site: www.epa.gov/superfund/centredale.</td>
+      <td>2018-07-09T00:00:00-04:00</td>
+      <td>Environment</td>
+      <td>Environment and Natural Resources Division</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14721,7 +14821,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14730,11 +14830,41 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code to subset to one press release and take the string</span>
+<span class="n">pharma</span> <span class="o">=</span> <span class="n">doj</span><span class="p">[</span><span class="n">doj</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="s2">&quot;17-1204&quot;</span><span class="p">][</span><span class="s1">&#39;contents&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">pharma</span><span class="p">)</span>
+
+<span class="c1">## upon initial skimming of pharma, there seems to be a string (xa0) which signals unicode encoding, so let&#39;s clean it up</span>
+<span class="n">pharma</span> <span class="o">=</span> <span class="n">pharma</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;</span><span class="se">\xa0</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>str</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14766,6 +14896,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to restrict to alpha</span>
+<span class="c1">## tokenize the string</span>
+<span class="n">tokenized_pharma</span> <span class="o">=</span> <span class="n">wordpunct_tokenize</span><span class="p">(</span><span class="n">pharma</span><span class="p">)</span>
+<span class="n">pharma_cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokenized_pharma</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()]</span>
 </pre></div>
 
      </div>
@@ -14773,7 +14906,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14782,11 +14915,149 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here for part of speech tagging</span>
+<span class="n">pharma_pos</span> <span class="o">=</span> <span class="n">pos_tag</span><span class="p">(</span><span class="n">pharma_cleaned</span><span class="p">)</span> <span class="c1"># generate part of speech tags for all tokens</span>
+<span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">pharma_pos</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span> <span class="c1"># print 10 random tokens and their tags</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[(&#39;aware&#39;, &#39;JJ&#39;),
+ (&#39;until&#39;, &#39;IN&#39;),
+ (&#39;to&#39;, &#39;TO&#39;),
+ (&#39;Agent&#39;, &#39;NNP&#39;),
+ (&#39;Alec&#39;, &#39;NNP&#39;),
+ (&#39;the&#39;, &#39;DT&#39;),
+ (&#39;The&#39;, &#39;DT&#39;),
+ (&#39;the&#39;, &#39;DT&#39;),
+ (&#39;three&#39;, &#39;CD&#39;),
+ (&#39;prosecuting&#39;, &#39;VBG&#39;)]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## code to print a dataframe with the 5 most frequent adjectives and their counts</span>
+<span class="n">adjective_tags</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;JJ&#39;</span><span class="p">,</span> <span class="s1">&#39;JJR&#39;</span><span class="p">,</span> <span class="s1">&#39;JJS&#39;</span><span class="p">}</span> <span class="c1"># use set for faster lookup</span>
+<span class="c1">## count the freq of the adjectives as we iterate over the tokens</span>
+<span class="n">adj_count</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">pharma_pos</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">token</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">adjective_tags</span><span class="p">:</span>
+        <span class="n">adj_count</span><span class="p">[</span><span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">adj_count</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">token</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="c1">## sort by frequency</span>
+<span class="n">adj_count</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">adj_count</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">## create a dataframe to print the top 5 frequent adjectives</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">adj_count</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span> <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;adjective&#39;</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>adjective</th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>former</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>opioid</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>nationwide</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>other</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>addictive</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14817,7 +15088,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14826,6 +15097,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here for part A</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">pharma</span><span class="p">)</span>
+
+<span class="c1">## we can iterate over doc.ents to get all the named entities</span>
+<span class="n">all_entities</span> <span class="o">=</span> <span class="p">[</span><span class="n">ent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">ent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">ents</span><span class="p">]</span>
+<span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">all_entities</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14833,7 +15109,41 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;Boston Regional Office&#39;,
+ &#39;William D. Weinreb&#39;,
+ &#39;Michael J. Gurry&#39;,
+ &#39;Sunrise Lee&#39;,
+ &#39;the District of New Hampshire&#39;,
+ &#39;District Court&#39;,
+ &#39;Charlotte&#39;,
+ &#39;N.C.&#39;,
+ &#39;20 years&#39;,
+ &#39;Executive&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14842,11 +15152,58 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here for part B</span>
+<span class="c1"># Extract all named entities with the tag &#39;LAW&#39; from the document</span>
+<span class="n">named_entities</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">ent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">ent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">ents</span> <span class="k">if</span> <span class="n">ent</span><span class="o">.</span><span class="n">label_</span> <span class="o">==</span> <span class="s1">&#39;LAW&#39;</span><span class="p">])</span>
+
+<span class="c1"># Print unique named entities with the tag LAW</span>
+<span class="n">named_entities</span>
+
+<span class="c1">## check what the &#39;LAW&#39; label stands for</span>
+<span class="n">spacy</span><span class="o">.</span><span class="n">explain</span><span class="p">(</span><span class="s1">&#39;LAW&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>{&#39;RICO&#39;, &#39;the Controlled Substances Act&#39;}</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;Named documents made into laws.&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14861,7 +15218,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14870,11 +15227,39 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here </span>
+<span class="sd">&quot;&quot;&quot;The RICO named entity with label &#39;LAW&#39; refers to the Racketeer Influenced and Corrupt Organizations Act, which is a federal law that </span>
+<span class="sd">provides for extended criminal penalties and civil action for acts performed as part of an ongoing criminal organization or mafia crime.</span>
+<span class="sd">It may apply to a pharmaceutical kickbacks case as it can involve a pattern of illegal activity by a company or individuals over time.&quot;&quot;&quot;</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#34;The RICO named entity with label &#39;LAW&#39; refers to the Racketeer Influenced and Corrupt Organizations Act, which is a federal law that \nprovides for extended criminal penalties and civil action for acts performed as part of an ongoing criminal organization or mafia crime.\nIt may apply to a pharmaceutical kickbacks case as it can involve a pattern of illegal activity by a company or individuals over time.&#34;</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14889,7 +15274,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14898,11 +15283,39 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="c1">## we can use a set if we want to avoid duplicate entities - but the question does not specify that the entities should be unique</span>
+<span class="n">date_label</span> <span class="o">=</span> <span class="p">[</span><span class="n">ent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">ent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">ents</span> <span class="k">if</span> <span class="n">ent</span><span class="o">.</span><span class="n">label_</span> <span class="o">==</span> <span class="s1">&#39;DATE&#39;</span> <span class="ow">and</span> <span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">ent</span><span class="o">.</span><span class="n">text</span><span class="p">))]</span>
+<span class="n">date_label</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;last year&#39;, &#39;20 years&#39;, &#39;three years&#39;, &#39;five years&#39;, &#39;three years&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14921,7 +15334,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14929,7 +15342,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Extract sentences containing the named entities using list comprehension with any() function to </span>
+<span class="c1">## check if the current sent contains any of the date_label</span>
+<span class="n">year_sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">sent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span> <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">year</span> <span class="ow">in</span> <span class="n">sent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">date_label</span><span class="p">)]</span>
+
+<span class="c1">## Print the original parts of the press release where the year lengths are mentioned</span>
+<span class="n">year_sentences</span>
 </pre></div>
 
      </div>
@@ -14937,6 +15355,45 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>[&#39;&#34;More than 20,000 Americans died of synthetic opioid overdoses last year, and millions are addicted to opioids.&#39;,
+ &#39;The charges of conspiracy to commit RICO and conspiracy to commit mail and wire fraud each provide for a sentence of no greater than 20 years in prison, three years of supervised release and a fine of $250,000, or twice the amount of pecuniary gain or loss.  &#39;,
+ &#39;The charges of conspiracy to violate the Anti-Kickback Law provide for a sentence of no greater than five years in prison, three years of supervised release and a $25,000 fine.&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><font color = "green"> The CEO faces up to 20 years in prison and three years of probation (supervised release) in addition to a hefty fine. </font></p>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14952,7 +15409,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14961,11 +15418,56 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here for subsetting</span>
+<span class="n">doj_subset</span> <span class="o">=</span> <span class="n">doj</span><span class="p">[</span><span class="n">doj</span><span class="o">.</span><span class="n">topics_clean</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Civil Rights&#39;</span><span class="p">,</span> <span class="s1">&#39;Hate Crimes&#39;</span><span class="p">,</span> <span class="s1">&#39;Project Safe Childhood&#39;</span><span class="p">])]</span>
+<span class="n">doj_subset</span><span class="p">[</span><span class="s1">&#39;topics_clean&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">doj_subset</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Civil Rights              305
+Hate Crimes               246
+Project Safe Childhood    166
+Name: topics_clean, dtype: int64</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>(717, 6)</pre>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14999,6 +15501,32 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to define function</span>
+<span class="n">sid</span> <span class="o">=</span> <span class="n">SentimentIntensityAnalyzer</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">sentiment_analyzer</span><span class="p">(</span><span class="n">press_release</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">press_release</span><span class="p">)</span>
+        
+        <span class="c1"># Extract named entities from the doc</span>
+        <span class="n">named_entities</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">ent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">ent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">ents</span><span class="p">])</span>
+
+        <span class="c1"># Remove non-space punctuation from each named entity and convert to a list</span>
+        <span class="n">named_entities_clean</span> <span class="o">=</span> <span class="p">[</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[^\w\s]&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">entity</span><span class="p">)</span> <span class="k">for</span> <span class="n">entity</span> <span class="ow">in</span> <span class="n">named_entities</span><span class="p">]</span>
+        
+        <span class="c1"># Create a regular expression pattern to match named entities</span>
+        <span class="n">joined_entities</span> <span class="o">=</span> <span class="s2">&quot;|&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">named_entities_clean</span><span class="p">)</span>
+
+        <span class="c1"># Remove non-space punctuation from the press release</span>
+        <span class="n">clean_release</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[^\w\s]&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">press_release</span><span class="p">)</span>
+
+        <span class="c1"># Remove named entities from the press release using regular expression substitution</span>
+        <span class="n">clean_release</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">joined_entities</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">clean_release</span><span class="p">)</span>
+
+        <span class="c1"># Analyze the sentiment of the cleaned press release</span>
+        <span class="k">return</span> <span class="n">sid</span><span class="o">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="n">clean_release</span><span class="p">)</span>
+
+    <span class="k">except</span><span class="p">:</span>
+        <span class="c1"># Return an error message if there was an error in sentiment analysis</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error in analyzing sentiment&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15006,7 +15534,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15015,11 +15543,88 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here executing the function</span>
+<span class="c1">## apply sentiment analyzer to each press release and save the result in a &#39;sentiment&#39; variable</span>
+<span class="n">doj_subset</span><span class="p">[</span><span class="s1">&#39;sentiment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">doj_subset</span><span class="p">[</span><span class="s1">&#39;contents&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">sentiment_analyzer</span><span class="p">)</span>
+<span class="n">doj_subset</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;sentiment&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6626</th>
+      <td>16-338</td>
+      <td>{'neg': 0.068, 'neu': 0.877, 'pos': 0.055, 'compound': -0.5267}</td>
+    </tr>
+    <tr>
+      <th>7384</th>
+      <td>16-419</td>
+      <td>{'neg': 0.143, 'neu': 0.761, 'pos': 0.096, 'compound': -0.9183}</td>
+    </tr>
+    <tr>
+      <th>8364</th>
+      <td>11-1217</td>
+      <td>{'neg': 0.124, 'neu': 0.804, 'pos': 0.072, 'compound': -0.8987}</td>
+    </tr>
+    <tr>
+      <th>8477</th>
+      <td>None</td>
+      <td>{'neg': 0.136, 'neu': 0.774, 'pos': 0.089, 'compound': -0.9504}</td>
+    </tr>
+    <tr>
+      <th>12057</th>
+      <td>12-298</td>
+      <td>{'neg': 0.248, 'neu': 0.732, 'pos': 0.019, 'compound': -0.9974}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15038,7 +15643,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15047,11 +15652,85 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here</span>
+<span class="c1">## Make a copy of the original DataFrame</span>
+<span class="n">doj_subset_wscore</span> <span class="o">=</span> <span class="n">doj_subset</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1">## Add the four sentiment scores in separate columns</span>
+<span class="c1">## Save the sentiment scores in with the the sentiment name concatenated with &#39;_score&#39; as there is a word called &#39;compound&#39; </span>
+<span class="c1">## in the sentiment dictionary</span>
+<span class="n">sentiments</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;neg&#39;</span><span class="p">,</span> <span class="s1">&#39;neu&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;compound&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">sentiment</span> <span class="ow">in</span> <span class="n">sentiments</span><span class="p">:</span>
+    <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="n">sentiment</span> <span class="o">+</span> <span class="s2">&quot;_score&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;sentiment&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">score_dict</span><span class="p">:</span> <span class="n">score_dict</span><span class="p">[</span><span class="n">sentiment</span><span class="p">]</span> <span class="k">if</span> <span class="n">score_dict</span> <span class="k">else</span> <span class="kc">None</span><span class="p">)</span>
+
+<span class="c1">## Sort the DataFrame by the &#39;neg&#39; column in decreasing order </span>
+<span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;neg_score&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;contents&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_score&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>contents</th>
+      <th>neg_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>329</th>
+      <td>14-248</td>
+      <td>The Department of Justice announced that this morning John W. Ng, 58, of Albuquerque, N.M., made his initial appearance in federal court on a criminal complaint charging him with a hate crime offense.  This charge is related to anti-Semitic threats Ng made against a Jewish woman who owns and operates the Nosh Jewish Delicatessen and Bakery in Albuquerque. Ng was arrested by the FBI on March 7, 2014, based on a criminal complaint alleging that he interfered with the victim’s federally protected rights by threatening her and interfering with her business because of her religion.  According to the criminal complaint, between Jan. 22, 2014, and Feb. 8, 2014, Ng allegedly posted threatening anti-Semitic notes on and in the vicinity of the victim’s business. A criminal complaint merely establishes probable cause, and Ng is presumed innocent unless proven guilty.  If convicted on the offense charged in the criminal complaint, Ng faces a maximum statutory penalty of one year in prison. This matter was investigated by the Albuquerque Division of the FBI and is being prosecuted by Assistant U.S. Attorney Mark T. Baker of the U.S. Attorney’s Office for the District of New Mexico and Trial Attorney AeJean Cha of the U.S. Department of Justice’s Civil Rights Division.</td>
+      <td>0.370</td>
+    </tr>
+    <tr>
+      <th>572</th>
+      <td>13-312</td>
+      <td>John Hall, 27, an Aryan Brotherhood member and inmate at the Federal Correctional Institution (FCI) in Seagoville, Texas, was sentenced today by U.S. District Judge Reed O’Connor after pleading guilty to violating the Matthew Shepard and James Byrd Jr. Hate Crimes Prevention Act stemming from his assault of a fellow inmate, whom he believed to be gay, the Department of Justice announced. Hall assaulted his fellow inmate with a dangerous weapon, causing bodily injury to the victim on Dec. 20, 2011. Hall was sentenced to serve 71 months in prison to be served consecutively with the sentence he is currently serving. The assault occurred on Dec. 20, 2011, inside the FCI Seagoville when Hall targeted and attacked the victim, a fellow inmate, because he believed the victim was gay or involved in a sexual relationship with another male inmate. Hall repeatedly punched, kicked and stomped on the victim’s face with his shod feet, a dangerous weapon, while yelling a homophobic slur. The victim lost consciousness during the assault and suffered multiple lacerations to his face. The victim also sustained a fractured eye socket, lost a tooth, fractured other teeth and was treated at a hospital for the injuries he sustained during Hall’s unprovoked attack. Hall pleaded guilty to violating the Matthew Shepard and James Byrd Jr. Hate Crimes Prevention Act on Nov. 8, 2012. “Brutality and violence based on sexual orientation has no place in a civilized society,” said Thomas E. Perez, Assistant Attorney General for the Civil Rights Division. “The Justice Department is committed to using all the tools in our law enforcement arsenal, including the Matthew Shepard and James Byrd Jr. Hate Crimes Prevention Act, to prosecute acts motivated by hate.” “This prosecution sends a clear message that this office, in partnership with attorneys in the department’s Civil Rights Division, will prioritize and aggressively prosecute hate crimes and others civil rights violations in North Texas,” said U.S. Attorney Sarah R. Saldaña of the Northern District of Texas. This case was investigated by the FBI Dallas Division. The case was prosecuted by Assistant U.S. Attorney Errin Martin and Trial Attorney Adriana Vieco of the Civil Rights Division.</td>
+      <td>0.338</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15067,7 +15746,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15076,6 +15755,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## agg and find the mean compound score by topic</span>
+<span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;topics_clean&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;compound_score&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">})</span>
 </pre></div>
 
      </div>
@@ -15083,6 +15763,82 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>compound_score</th>
+    </tr>
+    <tr>
+      <th>topics_clean</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Civil Rights</th>
+      <td>-0.088383</td>
+    </tr>
+    <tr>
+      <th>Hate Crimes</th>
+      <td>-0.937013</td>
+    </tr>
+    <tr>
+      <th>Project Safe Childhood</th>
+      <td>-0.646542</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><font color = "green"> Variation in the average compound scores of the three categories is likely the result of how intensely negative the language associated with certain activities is compared to others. For instance, hate crimes tend to be phrased in a more negative way than civil right crimes. </font></p>
+
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15157,6 +15913,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code defining a text processing function</span>
+<span class="n">stop_words_combined</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s2">&quot;english&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">custom_doj_stopwords</span>
+
+<span class="c1">## initialize stemmer</span>
+<span class="n">s_stemmer</span> <span class="o">=</span> <span class="n">SnowballStemmer</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">preprocess_text</span><span class="p">(</span><span class="n">press_release</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="c1">## convert the press_release to lowercase</span>
+    <span class="n">press_release</span> <span class="o">=</span> <span class="n">press_release</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>  
+
+    <span class="c1"># tokenize the string</span>
+    <span class="n">tokenized</span> <span class="o">=</span> <span class="n">wordpunct_tokenize</span><span class="p">(</span><span class="n">press_release</span><span class="p">)</span>
+
+    <span class="c1">## remove stopwords, non-alphabetic tokens, and tokens with length &lt; 4</span>
+    <span class="n">cleaned</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokenized</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words_combined</span> <span class="ow">and</span> <span class="n">word</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">]</span>
+
+    <span class="c1">## apply stemmer</span>
+    <span class="n">stemmed</span> <span class="o">=</span> <span class="p">[</span><span class="n">s_stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">cleaned</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stemmed</span><span class="p">)</span> <span class="c1"># return a single string</span>
 </pre></div>
 
      </div>
@@ -15173,6 +15948,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code executing the function</span>
+<span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;processed_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;contents&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">preprocess_text</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15180,7 +15956,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15189,11 +15965,115 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code showing the examples</span>
+<span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;16-718&#39;</span><span class="p">,</span> <span class="s1">&#39;16-217&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">ids</span><span class="p">:</span>
+    <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="nb">id</span><span class="p">][[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;contents&#39;</span><span class="p">,</span> <span class="s1">&#39;processed_text&#39;</span><span class="p">]]</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>contents</th>
+      <th>processed_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>11593</th>
+      <td>16-718</td>
+      <td>In a nine-count indictment unsealed today, two Mississippi correctional officers were charged with beating an inmate and a third was charged with helping to cover it up.  The indictment charged Lawardrick Marsher, 28, and Robert Sturdivant, 47, officers at Mississippi State Penitentiary, in Parchman, Mississippi, with a beating that included kicking, punching and throwing the victim to the ground.  Marsher and Sturdivant were charged with violating the right of K.H., a convicted prisoner, to be free from cruel and unusual punishment.  Sturdivant was also charged with failing to intervene while Marsher was punching and beating K.H.  The indictment alleges that their actions involved the use of a dangerous weapon and resulted in bodily injury to the victim. A third officer, Deonte Pate, 23, was charged along with Marsher and Sturdivant for conspiring to cover up the beating.  The indictment alleges that all three officers submitted false reports and that all three lied to the FBI. If convicted, Marsher and Sturdivant face a maximum sentence of 10 years in prison on the excessive force charges.  Each of the three officers faces up to five years in prison on the conspiracy and false statement charges, and up to 20 years in prison on the false report charges. An indictment is merely an accusation, and the defendants are presumed innocent unless and until proven guilty. This case is being investigated by the FBI’s Jackson Division, with the cooperation of the Mississippi Department of Corrections.  It is being prosecuted by Assistant U.S. Attorney Robert Coleman of the Northern District of Mississippi and Trial Attorney Dana Mulhauser of the Civil Rights Division’s Criminal Section.     Marsher Indictment</td>
+      <td>nine count indict unseal today mississippi correct offic charg beat inmat third charg help cover indict charg lawardrick marsher robert sturdiv offic mississippi state penitentiari parchman mississippi beat includ kick punch throw victim ground marsher sturdiv charg violat right convict prison free cruel unusu punish sturdiv also charg fail interven marsher punch beat indict alleg action involv danger weapon result bodili injuri victim third offic deont pate charg along marsher sturdiv conspir cover beat indict alleg three offic submit fals report three lie convict marsher sturdiv face maximum sentenc year prison excess forc charg three offic face five year prison conspiraci fals statement charg year prison fals report charg indict mere accus defend presum innoc unless proven guilti investig jackson cooper mississippi correct prosecut robert coleman northern mississippi dana mulhaus crimin section marsher indict</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>contents</th>
+      <th>processed_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6727</th>
+      <td>16-217</td>
+      <td>The Justice Department has reached a comprehensive settlement agreement with the city of Miami and the Miami Police Department (MPD) resolving the Justice Department’s investigation of officer-involved shootings by MPD officers, announced Principal Deputy Assistant Attorney General Vanita Gupta, head of the Justice Department’s Civil Rights Division and U.S. Attorney Wifredo A. Ferrer of the Southern District of Florida. The settlement, which was approved by Miami’s city commission today and will go into effect when the agreement is signed by all parties, resolves claims stemming from the Justice Department’s investigation into officer-involved shootings by MPD officers, which was conducted under the Violent Crime Control and Law Enforcement Act of 1994.  The investigation’s findings, issued in July 2013, identified a pattern or practice of excessive use of force through officer-involved shootings in violation of the Fourth Amendment of the Constitution.  The city’s compliance with the settlement will be monitored by an independent reviewer, former Tampa, Florida, Police Chief Jane Castor.  Under the settlement agreement, the city will implement comprehensive reforms to ensure constitutional policing and support public trust.  The settlement agreement is designed to minimize officer-involved shootings and to more effectively and quickly investigate officer-involved shootings that do occur, through measures that include: “This settlement represents a renewed commitment by the city of Miami and Chief Rodolfo Llanes to provide constitutional policing for Miami residents and to protect public safety through sustainable reform,” said Principal Deputy Assistant Attorney General Gupta.  “The agreement will help to strengthen the relationship between the MPD and the communities they serve by improving accountability for officers who fire their weapons unlawfully, and provides for community participation in the enforcement of this agreement.”  “Today's agreement is the result of a joint effort between the Department of Justice and the City of Miami to ensure that the Miami Police Department continues its efforts to make our community safe while protecting the sacred Constitutional rights of all of our citizens,” said U.S. Attorney Ferrer.  “Through oversight and communication, the agreement seeks to make permanent the positive changes that former Chief Orosa and Chief Llanes have made, and we applaud the City Commission’s vote.” The settlement agreement builds upon important reforms implemented by the city since the Justice Department issued its findings, including:  The investigation was conducted by attorneys and staff from the Civil Rights Division’s Special Litigation Section and the Civil Division of the U. S. Attorney’s Office of the Southern District of Florida.</td>
+      <td>reach comprehens settlement agreement citi miami miami polic resolv offic involv shoot offic announc princip deputi general vanita gupta head wifredo ferrer southern florida settlement approv miami citi commiss today effect agreement sign parti resolv claim stem offic involv shoot offic conduct violent crime control enforc find issu juli identifi pattern practic excess forc offic involv shoot violat fourth amend constitut citi complianc settlement monitor independ review former tampa florida polic chief jane castor settlement agreement citi implement comprehens reform ensur constitut polic support public trust settlement agreement design minim offic involv shoot effect quick investig offic involv shoot occur measur includ settlement repres renew commit citi miami chief rodolfo llane provid constitut polic miami resid protect public safeti sustain reform said princip deputi general gupta agreement help strengthen relationship communiti serv improv account offic fire weapon unlaw provid communiti particip enforc agreement today agreement result joint effort citi miami ensur miami polic continu effort make communiti safe protect sacr constitut citizen said ferrer oversight communic agreement seek make perman posit chang former chief orosa chief llane made applaud citi commiss vote settlement agreement build upon import reform implement citi sinc issu find includ conduct attorney staff special litig section southern florida</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15248,11 +16128,171 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<span class="c1">## create a document-term matrix using the preprocessed press releases</span>
+<span class="n">metadata</span> <span class="o">=</span> <span class="n">doj_subset_wscore</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;compound_score&#39;</span><span class="p">,</span> <span class="s1">&#39;topics_clean&#39;</span><span class="p">]]</span>
+<span class="n">dtm</span> <span class="o">=</span> <span class="n">create_dtm</span><span class="p">(</span><span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;processed_text&#39;</span><span class="p">],</span> <span class="n">metadata</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## function to get top words</span>
+<span class="k">def</span> <span class="nf">get_topwords</span><span class="p">(</span><span class="n">data_subset</span><span class="p">,</span> <span class="n">subset_col</span><span class="p">,</span> <span class="n">n_topwords</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get the top n words in the given subset of data and print a message.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        data_subset (DataFrame): Subset of the data to be considered.</span>
+<span class="sd">        subset_col (int): Column index to start summing from.</span>
+<span class="sd">        n_topwords (int): Number of top words to get.</span>
+<span class="sd">        message (str): A message to be printed.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Series: A series of top words.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Print message indicating the subset of data being analyzed</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Top </span><span class="si">{</span><span class="n">n_topwords</span><span class="si">}</span><span class="s2"> words for press releases </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Get the sum of word counts across all documents in the subset, for each word</span>
+    <span class="n">word_counts</span> <span class="o">=</span> <span class="n">data_subset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="n">subset_col</span><span class="p">:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    
+    <span class="c1"># Sort the words by frequency, and return the top n_topwords</span>
+    <span class="n">topwords</span> <span class="o">=</span> <span class="n">word_counts</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)[:</span><span class="n">n_topwords</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">topwords</span>
+
+<span class="c1"># Get the subset of data with compound sentiment in the top 5% </span>
+<span class="n">top_5</span> <span class="o">=</span> <span class="n">dtm</span><span class="p">[</span><span class="n">dtm</span><span class="p">[</span><span class="s1">&#39;compound_score&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">dtm</span><span class="p">[</span><span class="s1">&#39;compound_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)]</span>
+
+<span class="c1"># Get the top 10 words for press releases with compound sentiment in the top 5%</span>
+<span class="n">topwords_top_5</span> <span class="o">=</span> <span class="n">get_topwords</span><span class="p">(</span><span class="n">top_5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;with compound sentiment in the top 5%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">topwords_top_5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Get the subset of data with compound sentiment in the bottom 5% </span>
+<span class="n">bottom_5</span> <span class="o">=</span> <span class="n">dtm</span><span class="p">[</span><span class="n">dtm</span><span class="p">[</span><span class="s1">&#39;compound_score&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">dtm</span><span class="p">[</span><span class="s1">&#39;compound_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)]</span>
+
+<span class="c1"># Get the top 10 words for press releases with compound sentiment in the bottom 5%</span>
+<span class="n">topwords_bottom_5</span> <span class="o">=</span> <span class="n">get_topwords</span><span class="p">(</span><span class="n">bottom_5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;with compound sentiment in the bottom 5%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">topwords_bottom_5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># Define a list of topics to loop over</span>
+<span class="n">topics</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Civil Rights&#39;</span><span class="p">,</span> <span class="s1">&#39;Hate Crimes&#39;</span><span class="p">,</span> <span class="s1">&#39;Project Safe Childhood&#39;</span><span class="p">]</span>
+
+<span class="c1"># Loop over each topic and get the top 10 words for press releases in that topic</span>
+<span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">topics</span><span class="p">:</span>
+    <span class="c1"># Subset the data for the current topic</span>
+    <span class="n">df_topic</span> <span class="o">=</span> <span class="n">dtm</span><span class="p">[</span><span class="n">dtm</span><span class="p">[</span><span class="s1">&#39;topics_clean&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">topic</span><span class="p">]</span>
+    
+    <span class="c1"># Get the top 10 words for the current topic</span>
+    <span class="n">topwords</span> <span class="o">=</span> <span class="n">get_topwords</span><span class="p">(</span><span class="n">df_topic</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;in </span><span class="si">{</span><span class="n">topic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Print the top words for the current topic and print a new line</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">topwords</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Top 10 words for press releases with compound sentiment in the top 5%
+agreement     178
+enforc        121
+state         114
+ensur         108
+disabl        107
+communiti      98
+settlement     93
+polic          88
+student        87
+servic         83
+dtype: int64
+
+Top 10 words for press releases with compound sentiment in the bottom 5%
+assault     180
+crime       163
+victim      160
+hate        129
+offic       118
+conspir     113
+american    110
+sentenc     105
+defend      102
+charg        97
+dtype: int64
+
+Top 10 words for press releases in Civil Rights
+offic        637
+hous         633
+discrimin    616
+enforc       544
+disabl       532
+said         497
+feder        479
+violat       477
+state        452
+court        414
+dtype: int64
+
+Top 10 words for press releases in Hate Crimes
+victim      591
+crime       557
+hate        524
+defend      484
+prosecut    478
+charg       463
+sentenc     455
+american    451
+feder       432
+guilti      430
+dtype: int64
+
+Top 10 words for press releases in Project Safe Childhood
+child          1022
+exploit         701
+sexual          572
+safe            479
+childhood       474
+project         472
+pornographi     452
+children        423
+crimin          405
+prosecut        374
+dtype: int64
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15273,7 +16313,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15281,12 +16321,69 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## tokenize each of the press releases</span>
+<span class="n">text_raw_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">wordpunct_tokenize</span><span class="p">(</span><span class="n">one_text</span><span class="p">)</span> <span class="k">for</span> <span class="n">one_text</span> <span class="ow">in</span> 
+                  <span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">processed_text</span><span class="p">]</span>
+
+<span class="c1">## create a dictionary of terms with unique integer ids</span>
+<span class="n">dictionary</span> <span class="o">=</span> <span class="n">corpora</span><span class="o">.</span><span class="n">Dictionary</span><span class="p">(</span><span class="n">text_raw_tokens</span><span class="p">)</span>
+
+<span class="c1">## after playing with the parameters, we found that the overall best classification results were obtained </span>
+<span class="c1">## when we don&#39;t filter extremes. the filters helped us get close to 100% accuracy for Hate Crimes and </span>
+<span class="c1">## Project Safe Childhood but the Civil Rights topic was not satisfactorily classified.</span>
+<span class="c1"># dictionary.filter_extremes(no_below = 5, no_above = 0.99)</span>
+
+<span class="c1">## create a bag-of-words representation of the corpus - mapping of (word_id, word_frequency)</span>
+<span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="n">dictionary</span><span class="o">.</span><span class="n">doc2bow</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">text_raw_tokens</span><span class="p">]</span>
+
+<span class="c1"># train the LDA model</span>
+<span class="n">lda_model</span> <span class="o">=</span> <span class="n">gensim</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ldamodel</span><span class="o">.</span><span class="n">LdaModel</span><span class="p">(</span><span class="n">corpus</span><span class="o">=</span><span class="n">corpus</span><span class="p">,</span>
+                     <span class="n">id2word</span><span class="o">=</span><span class="n">dictionary</span><span class="p">,</span>
+                     <span class="n">num_topics</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+                     <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
+                     <span class="n">chunksize</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+                     <span class="n">passes</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                     <span class="n">per_word_topics</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">## print top 15 words in each topic in a clean format</span>
+<span class="k">for</span> <span class="n">topic_id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">lda_model</span><span class="o">.</span><span class="n">num_topics</span><span class="p">):</span>
+    <span class="n">top_words</span> <span class="o">=</span> <span class="n">lda_model</span><span class="o">.</span><span class="n">show_topic</span><span class="p">(</span><span class="n">topic_id</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Topic </span><span class="si">{</span><span class="n">topic_id</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="s1">&#39; | &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">top_words</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># # Can also use the gensim.models.ldamodel.LdaModel.print_topics() to print the topics</span>
+<span class="c1"># topics = lda_model.print_topics(num_words = 15)</span>
+<span class="c1"># for topic in topics:</span>
+<span class="c1">#     print(topic)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Topic 1: victim | crime | defend | prosecut | charg | hate | sentenc | said | guilti | year | feder | american | indict | prison | assault
+Topic 2: discrimin | hous | disabl | enforc | state | said | agreement | court | employ | work | inform | feder | offic | violat | general
+Topic 3: child | sexual | exploit | safe | project | childhood | minor | virginia | crimin | children | pornographi | prosecut | sentenc | ceo | investig
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15318,6 +16415,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to get doc-level topic probabilities </span>
+<span class="c1">## Create a list to store the predicted topics for each document</span>
+<span class="n">predicted_topics</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Loop through each document and get the topic probabilities</span>
+<span class="n">topic_probabilities</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">corpus</span><span class="p">:</span>
+    <span class="n">topic_probs</span> <span class="o">=</span> <span class="n">lda_model</span><span class="o">.</span><span class="n">get_document_topics</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">minimum_probability</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+    <span class="n">topic_probabilities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">topic_probs</span><span class="p">)</span>
+    <span class="c1"># Sort the topic probabilities in descending order and get the most probable topic</span>
+    <span class="n">topic</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">topic_probs</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">predicted_topics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;topic_</span><span class="si">{</span><span class="n">topic</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">predicted_topics</span><span class="p">)</span> <span class="o">==</span> <span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># return an error message if the condition is false</span>
 </pre></div>
 
      </div>
@@ -15334,6 +16444,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to add those topic probabilities to the dataframe</span>
+<span class="c1">## add topic probabilities for each topic </span>
+<span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;topic_probabilities&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">topic_probabilities</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;topic_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">_prob&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">topic_probabilities</span><span class="p">]</span>
+
+<span class="c1">## add the predicted topic to the dataframe</span>
+<span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;top_topic&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">predicted_topics</span>
 </pre></div>
 
      </div>
@@ -15341,7 +16459,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15350,11 +16468,191 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here to summarize the topic proportions for each of the topics_clean </span>
+<span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;topics_clean&#39;</span><span class="p">],</span> <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;top_topic&#39;</span><span class="p">],</span> <span class="n">normalize</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>top_topic</th>
+      <th>topic_1</th>
+      <th>topic_2</th>
+      <th>topic_3</th>
+    </tr>
+    <tr>
+      <th>topics_clean</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Civil Rights</th>
+      <td>0.285246</td>
+      <td>0.714754</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Hate Crimes</th>
+      <td>0.991870</td>
+      <td>0.008130</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Project Safe Childhood</th>
+      <td>0.000000</td>
+      <td>0.018072</td>
+      <td>0.981928</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><font color = "green"> Using a couple press releases as examples, write a 1-2 sentence interpretation of why some of the manual topics map on more cleanly to an estimated topic than other manual topic(s) </font></p>
+<p>The performance of the topic model in classifying manual labels can depend on the specific language used in the documents. In this case, the manual labels "Hate Crimes" and "Project Safe Childhood" had more specific language that mapped more clearly onto the estimated topics, while the "Civil Rights" label had some overlap in terminology with the other categories, making it harder to classify. One way to improve the model's accuracy is to train it on larger datasets and remove more stop words before training. Misclassification can occur when some of the most common words for a different topic are found in another topic, which can affect the accuracy of the model. For example (see code below), the words "assault", "prison", "said", and "year" and four of the most frequent words in a "Hate Crime" press release, also appear in the "Civil Rights" press release, which is one of the reasons that led to misclassification.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## A set of the most frequent words in `Hate Crimes` press releases</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;victim&#39;</span><span class="p">,</span> <span class="s1">&#39;crime&#39;</span><span class="p">,</span> <span class="s1">&#39;defend&#39;</span><span class="p">,</span><span class="s1">&#39;prosecut&#39;</span><span class="p">,</span> <span class="s1">&#39;charg&#39;</span><span class="p">,</span> <span class="s1">&#39;hate&#39;</span><span class="p">,</span> <span class="s1">&#39;sentenc&#39;</span><span class="p">,</span> <span class="s1">&#39;said&#39;</span><span class="p">,</span> <span class="s1">&#39;guilti&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;feder&#39;</span><span class="p">,</span> <span class="s1">&#39;american&#39;</span><span class="p">,</span> <span class="s1">&#39;indict&#39;</span><span class="p">,</span> <span class="s1">&#39;prison&#39;</span><span class="p">,</span> <span class="s1">&#39;assault&#39;</span><span class="p">}</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="s2">&quot;15-1287&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1</span><span class="p">)[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;topics_clean&#39;</span><span class="p">,</span> <span class="s1">&#39;top_topic&#39;</span><span class="p">,</span> <span class="s1">&#39;contents&#39;</span><span class="p">]]</span>
+<span class="n">example</span> <span class="o">=</span> <span class="n">sample</span><span class="p">[</span><span class="s1">&#39;contents&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">token</span> <span class="o">=</span> <span class="n">wordpunct_tokenize</span><span class="p">(</span><span class="n">example</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">([</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">token</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">])</span>
+<span class="n">sample</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;prison&#39;, &#39;year&#39;, &#39;assault&#39;, &#39;said&#39;, &#39;said&#39;, &#39;said&#39;]
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>topics_clean</th>
+      <th>top_topic</th>
+      <th>contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>4109</th>
+      <td>15-1287</td>
+      <td>Civil Rights</td>
+      <td>topic_2</td>
+      <td>District Judge J. Michael Seabright today sentenced former Honolulu Police Officer Vincent Morre, 38, to 30 months in prison for violating the civil rights of two Honolulu men.  On May 19, 2015, Morre pleaded guilty to two counts of depriving the two men’s right to be free from the use of unreasonable force by a law enforcement officer on Sept. 5, 2014. According to information presented to the court, Morre, then a 10 year veteran of the Honolulu Police Department, was searching for a fugitive when he entered a game room on Hopaka Street.  Once in the game room, Morre, in an unprovoked attack, kicked J.T. in the head.  Morre then continued to search the game room for the fugitive.  On his way out, Morre reapproached J.T. but first struck F.F. (who was seated next to J.T) in the face twice and then kicked his chest.  Morre then continued the assault on J.T. by kicking J.T. off his chair.  As Morre was leaving the game room, he threw a metal stool which hit J.T. in the head, requiring three stitches.  Five days later, Morre filed a false police report omitting that he had assaulted J.T. or F.F. “When this defendant violated the trust of the people he was sworn to serve, the Department of Justice stood ready to enforce the law and protect the civil rights of all Americans,” said Principal Deputy Assistant Attorney General Vanita Gupta, head of the Civil Rights Division. “This case represents important steps in vindicating the civil rights of the victims of unreasonable use of force by a law enforcement officer,” said U.S. Attorney Florence T. Nakakuni of the District of Hawaii. “The FBI would like to thank the Honolulu Police Department for its cooperation, assistance, and transparency during this investigation,” said Special Agent in Charge Paul Delacourt of the FBI’s Honolulu Field Office. Assistant U.S. Attorney Darren W.K. Ching of the District of Hawaii and Trial Attorney Angie Cha of the Civil Rights Division prosecuted the case.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15383,11 +16681,98 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## your code here </span>
+<span class="k">def</span> <span class="nf">create_bigram_onedoc</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the bigrams from a text.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters:</span>
+<span class="sd">        text (str): A text.</span>
+<span class="sd">    </span>
+<span class="sd">    Returns:</span>
+<span class="sd">        list: A string of bigrams.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">bigram</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">word1</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">word2</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">word1</span><span class="p">,</span> <span class="n">word2</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">),</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:])]</span>
+    
+    <span class="k">return</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bigram</span><span class="p">)</span>
+
+<span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;processed_text_bigrams&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;processed_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">create_bigram_onedoc</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Print the `id`, `processed_text`, and `processed_text_bigram` columns for press release with id = 16-217</span>
+<span class="n">doj_subset_wscore</span><span class="p">[</span><span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="s2">&quot;16-217&quot;</span><span class="p">][[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;processed_text&#39;</span><span class="p">,</span> <span class="s1">&#39;processed_text_bigrams&#39;</span><span class="p">]]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>processed_text</th>
+      <th>processed_text_bigrams</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6727</th>
+      <td>16-217</td>
+      <td>reach comprehens settlement agreement citi miami miami polic resolv offic involv shoot offic announc princip deputi general vanita gupta head wifredo ferrer southern florida settlement approv miami citi commiss today effect agreement sign parti resolv claim stem offic involv shoot offic conduct violent crime control enforc find issu juli identifi pattern practic excess forc offic involv shoot violat fourth amend constitut citi complianc settlement monitor independ review former tampa florida polic chief jane castor settlement agreement citi implement comprehens reform ensur constitut polic support public trust settlement agreement design minim offic involv shoot effect quick investig offic involv shoot occur measur includ settlement repres renew commit citi miami chief rodolfo llane provid constitut polic miami resid protect public safeti sustain reform said princip deputi general gupta agreement help strengthen relationship communiti serv improv account offic fire weapon unlaw provid communiti particip enforc agreement today agreement result joint effort citi miami ensur miami polic continu effort make communiti safe protect sacr constitut citizen said ferrer oversight communic agreement seek make perman posit chang former chief orosa chief llane made applaud citi commiss vote settlement agreement build upon import reform implement citi sinc issu find includ conduct attorney staff special litig section southern florida</td>
+      <td>reach_comprehens comprehens_settlement settlement_agreement agreement_citi citi_miami miami_miami miami_polic polic_resolv resolv_offic offic_involv involv_shoot shoot_offic offic_announc announc_princip princip_deputi deputi_general general_vanita vanita_gupta gupta_head head_wifredo wifredo_ferrer ferrer_southern southern_florida florida_settlement settlement_approv approv_miami miami_citi citi_commiss commiss_today today_effect effect_agreement agreement_sign sign_parti parti_resolv resolv_claim claim_stem stem_offic offic_involv involv_shoot shoot_offic offic_conduct conduct_violent violent_crime crime_control control_enforc enforc_find find_issu issu_juli juli_identifi identifi_pattern pattern_practic practic_excess excess_forc forc_offic offic_involv involv_shoot shoot_violat violat_fourth fourth_amend amend_constitut constitut_citi citi_complianc complianc_settlement settlement_monitor monitor_independ independ_review review_former former_tampa tampa_florida florida_polic polic_chief chief_jane jane_castor castor_settlement settlement_agreement agreement_citi citi_implement implement_comprehens comprehens_reform reform_ensur ensur_constitut constitut_polic polic_support support_public public_trust trust_settlement settlement_agreement agreement_design design_minim minim_offic offic_involv involv_shoot shoot_effect effect_quick quick_investig investig_offic offic_involv involv_shoot shoot_occur occur_measur measur_includ includ_settlement settlement_repres repres_renew renew_commit commit_citi citi_miami miami_chief chief_rodolfo rodolfo_llane llane_provid provid_constitut constitut_polic polic_miami miami_resid resid_protect protect_public public_safeti safeti_sustain sustain_reform reform_said said_princip princip_deputi deputi_general general_gupta gupta_agreement agreement_help help_strengthen strengthen_relationship relationship_communiti communiti_serv serv_improv improv_account account_offic offic_fire fire_weapon weapon_unlaw unlaw_provid provid_communiti communiti_particip particip_enforc enforc_agreement agreement_today today_agreement agreement_result result_joint joint_effort effort_citi citi_miami miami_ensur ensur_miami miami_polic polic_continu continu_effort effort_make make_communiti communiti_safe safe_protect protect_sacr sacr_constitut constitut_citizen citizen_said said_ferrer ferrer_oversight oversight_communic communic_agreement agreement_seek seek_make make_perman perman_posit posit_chang chang_former former_chief chief_orosa orosa_chief chief_llane llane_made made_applaud applaud_citi citi_commiss commiss_vote vote_settlement settlement_agreement agreement_build build_upon upon_import import_reform reform_implement implement_citi citi_sinc sinc_issu issu_find find_includ includ_conduct conduct_attorney attorney_staff staff_special special_litig litig_section section_southern southern_florida</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15415,7 +16800,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15424,11 +16809,140 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here</span>
+<span class="c1">## create a document-term matrix using the processed_text_bigrams </span>
+<span class="n">metadata</span> <span class="o">=</span> <span class="n">doj_subset_wscore</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;topics_clean&#39;</span><span class="p">,</span> <span class="s1">&#39;compound_score&#39;</span><span class="p">]]</span>
+<span class="n">dtm_bigram</span> <span class="o">=</span> <span class="n">create_dtm</span><span class="p">(</span><span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;processed_text_bigrams&#39;</span><span class="p">],</span> <span class="n">metadata</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensions of dtm matrix:&quot;</span><span class="p">,</span> <span class="n">dtm</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dimensions of dtm_bigram matrix:&quot;</span><span class="p">,</span> <span class="n">dtm_bigram</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Dimensions of dtm matrix: (717, 6870)
+Dimensions of dtm_bigram matrix: (717, 72721)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The bigram matrix have more dimensions than dtm because it accounts for pairs of adjacent words rather than individual words, but the unigram matrix only accounts for individual words.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Find and print the 10 most prevelant bigrams for each of the three topics_clean using the `get_topwords` function</span>
+<span class="c1">## Loop over each topic and get the top 10 words for press releases in that topic</span>
+<span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">topics</span><span class="p">:</span>
+    <span class="c1"># Subset the data for the current topic in the bigram dtm</span>
+    <span class="n">df_topic</span> <span class="o">=</span> <span class="n">dtm_bigram</span><span class="p">[</span><span class="n">dtm_bigram</span><span class="p">[</span><span class="s1">&#39;topics_clean&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">topic</span><span class="p">]</span>
+    
+    <span class="c1"># Get the top 10 words for the current topic</span>
+    <span class="n">topwords</span> <span class="o">=</span> <span class="n">get_topwords</span><span class="p">(</span><span class="n">df_topic</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;in </span><span class="si">{</span><span class="n">topic</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Print the top words for the current topic and print a new line</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">topwords</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Top 10 words for press releases in Civil Rights
+fair_hous         231
+deputi_general    221
+princip_deputi    221
+vanita_gupta      202
+gupta_head        200
+general_vanita    199
+said_princip      186
+unit_state        156
+nation_origin     143
+consent_decre     128
+dtype: int64
+
+Top 10 words for press releases in Hate Crimes
+hate_crime          379
+african_american    367
+plead_guilti        275
+year_prison         161
+special_agent       124
+racial_motiv        114
+thoma_perez         111
+grand_juri          101
+perez_general        95
+said_thoma           91
+dtype: int64
+
+Top 10 words for press releases in Project Safe Childhood
+safe_childhood       474
+project_safe         472
+child_pornographi    450
+child_exploit        281
+sexual_exploit       223
+exploit_children     200
+plead_guilti         197
+exploit_obscen       176
+obscen_section       175
+child_sexual         174
+dtype: int64
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15446,7 +16960,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15454,7 +16968,36 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your code here </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">cosine_similarity</span>
+<span class="c1">## initialize the vectorizer</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">lowercase</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">## calculate pairwise cosine similarity between the documents based on processed_text_bigrams</span>
+<span class="n">dtm_bigram_sparse</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">doj_subset_wscore</span><span class="p">[</span><span class="s1">&#39;processed_text_bigrams&#39;</span><span class="p">])</span>
+<span class="n">similarity_matrix</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">dtm_bigram_sparse</span><span class="p">)</span> <span class="c1"># similarity with each doc including itself</span>
+
+<span class="c1">## set the diagonal to 0 to exclude self-similarity</span>
+<span class="c1">## the diagonal corresponds to the similarity of each document with itself</span>
+<span class="n">np</span><span class="o">.</span><span class="n">fill_diagonal</span><span class="p">(</span><span class="n">similarity_matrix</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">find_similar_docs</span><span class="p">(</span><span class="n">sim_matrix</span> <span class="o">=</span> <span class="n">similarity_matrix</span><span class="p">,</span> <span class="n">top_n</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">top_n</span><span class="p">):</span>
+        <span class="c1">## find the indices of the two highest similarities</span>
+        <span class="n">top_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">sim_matrix</span><span class="o">.</span><span class="n">argmax</span><span class="p">(),</span> <span class="n">sim_matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+        <span class="c1">## print the first two press releases with the highest similarity</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The documents are </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">sim_matrix</span><span class="p">[</span><span class="n">top_indices</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="s2">% similar</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">top_indices</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="s1">&#39;contents&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">doj_subset_wscore</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">top_indices</span><span class="p">[</span><span class="mi">1</span><span class="p">]][</span><span class="s1">&#39;contents&#39;</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;___________________________________________________________________</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="c1">## set the similarity of the documents in the first pair to 0 to print the next pair</span>
+        <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">top_indices</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">top_indices</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">similarity_matrix</span><span class="p">[</span><span class="n">top_indices</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">top_indices</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1">## call the function to print the top 2 pairs of similar press releases</span>
+<span class="n">find_similar_docs</span><span class="p">(</span><span class="n">sim_matrix</span> <span class="o">=</span> <span class="n">similarity_matrix</span><span class="p">,</span> <span class="n">top_n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15462,6 +17005,66 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>The documents are 94.2% similar
+
+A Church Hill, Maryland, resident was sentenced today to 20 years in prison to be followed by a lifetime term of supervised release for enticement of a minor to engage in sexual activity and attempting to transfer obscene materials to a minor, announced Acting Assistant Attorney General Kenneth A. Blanco of the Justice Department’s Criminal Division and Acting U.S. Attorney Benjamin G. Greenberg of the Southern District of Florida.    Lee Robert Moore, 38, pleaded guilty March 1, 2017, before U.S. District Judge Daniel T. K. Hurley of the Southern District of Florida. Moore was employed by the U.S. Secret Service-Uniformed Division and was assigned to the White House at the time of his arrest on Nov. 9, 2015, and has remained in custody since that time. Moore has since been terminated from his Secret Service position.   According to admissions made in connection with his plea, Moore maintained a profile on the social media application “Meet24,” which provides a mobile-based platform for exchanging digital images, as well as voice and text messages. Delaware State Police Detectives with the Delaware Child Predator Task Force created a profile on this site, posing as a 14-year-old girl, with whom Moore engaged in a number of online chat sessions, via the “Meet24” and “Kik” mobile apps over a two-month period, including while Moore was at work. A number of the online chats between Moore and the undercover officers posing as a female minor were sexual in nature and, on several occasions, Moore sent pictures of himself, including one sexually explicit image.    According to the plea documents, after his arrest, law enforcement discovered that Moore had communicated with a minor in Florida. Moore admitted that in those communications, he sent sexually explicit images of himself and enticed the minor to send sexually explicit photos of herself as well. Moore engaged in the same type of behavior with a 14-year-old girl in Texas and another 17-year-old girl in Missouri. Moore requested that his federal charges in Delaware be transferred to the Southern District of Florida so that he could plead guilty to both charges at one time.   U.S. Immigration and Customs Enforcement’s Homeland Security Investigations and the Delaware Child Predator Task Force investigated the case. Trial Attorney Austin M. Berry of the Criminal Division’s Child Exploitation and Obscenity Section (CEOS) and Assistant U.S. Attorney Corey Steinberg of the Southern District of Florida prosecuted the case, with assistance from the U.S. Attorney’s Office for the District of Delaware.    This case was brought as part of Project Safe Childhood, a nationwide initiative to combat the growing epidemic of child sexual exploitation and abuse, launched in May 2006 by the Department of Justice. Led by U.S. Attorneys’ Offices and CEOS, Project Safe Childhood marshals federal, state and local resources to better locate, apprehend and prosecute individuals who exploit children via the Internet, as well as to identify and rescue victims. For more information about Project Safe Childhood, please visit http://www.justice.gov/psc.
+
+A Church Hill, Maryland resident pleaded guilty today in federal court to one count of enticement of a minor to engage in sexual activity and one count of attempting to transfer obscene materials to a minor, announced Acting Assistant Attorney General Kenneth A. Blanco of the Justice Department’s Criminal Division and U.S. Attorney Wifredo A. Ferrer of the Southern District of Florida.   Lee Robert Moore, 38, pleaded guilty today before U.S. District Judge Daniel T. K. Hurley of the Southern District of Florida.  Moore was employed by the U.S. Secret Service-Uniformed Division and was assigned to the White House at the time of his arrest on Nov. 9, 2015, and has remained in custody since that time.  Moore has since been terminated from his Secret Service position.   According to admissions made in connection with his plea, Moore maintained a profile on the social media application “Meet24,” which provides a mobile-based platform for exchanging digital images, as well as voice and text messages.  Delaware State Police Detectives with the Delaware Child Predator Task Force created a profile on this site, posing as a 14-year-old girl, with whom Moore engaged in a number of online chat sessions, via the “Meet24” and “Kik” mobile apps over a two-month period, including while Moore was at work.  A number of the online chats between Moore and the undercover officers posing as a female minor were sexual in nature and, on several occasions, Moore sent pictures of himself, including one sexually explicit image.   According to the plea documents, after his arrest, law enforcement discovered that Moore had communicated with a minor in Florida.  Moore admitted that in those communications, he sent sexually explicit images of himself and enticed the minor to send sexually explicit photos of herself as well.  Moore engaged in the same type of behavior with a 14-year-old girl in Texas and another 17-year-old girl in Missouri.  Moore requested that his federal charges in Delaware be transferred to the Southern District of Florida so that he could plead guilty to both charges at one time. U.S. Immigration and Customs Enforcement’s Homeland Security Investigations and the Delaware Child Predator Task Force investigated the case.  Trial Attorney Austin M. Berry of the Criminal Division’s Child Exploitation and Obscenity Section (CEOS) and Assistant U.S. Attorney Corey Steinberg of the Southern District of Florida are prosecuting the case.   This case was brought as part of Project Safe Childhood, a nationwide initiative to combat the growing epidemic of child sexual exploitation and abuse, launched in May 2006 by the Department of Justice.  Led by U.S. Attorneys’ Offices and CEOS, Project Safe Childhood marshals federal, state and local resources to better locate, apprehend and prosecute individuals who exploit children via the Internet, as well as to identify and rescue victims.  For more information about Project Safe Childhood, please visit http://www.justice.gov/psc.
+___________________________________________________________________
+
+The documents are 94.2% similar
+
+A Wichita, Kansas man was sentenced to 210 months in prison and 10 years of supervised release, for production of child pornography based on his participation in a website that was operated for the purpose of coercing and enticing minors as young as eight years old to engage in sexually explicit conduct on web camera.   Acting Assistant Attorney General Kenneth A. Blanco of the Justice Department’s Criminal Division; U.S. Attorney Dana J. Boente of the Eastern District of Virginia; and Section Chief John J. Brosnan of the FBI’s Violent Crimes Against Children Section (VCACS) made the announcement.   Allan Cortez, 34, was charged on April 4, 2016, and pleaded guilty before U.S. District Judge T.S. Ellis III of the Eastern District of Virginia on April 14.   According to admissions made in connection with the plea agreement, members of the conspiracy created false profiles on social networking sites popular with children, posing as young teenagers to lure children to two websites they controlled. Once on the conspirators’ websites, Cortez admitted that members of the conspiracy showed the children pre-recorded videos of prior minor victims, often engaging in sexually explicit conduct, to make the new victims think that they were chatting with another minor. Cortez further admitted that conspirators used these videos to coerce and entice children to engage in sexually explicit activity on their own web cameras, which could be viewed live by other members without the victim’s knowledge and which the website automatically recorded and made available for download later. Cortez admitted that he chatted with minors in furtherance of the conspiracy. The defendant also admitted that one of the websites ranked the efforts of the members to successfully coerce and entice children to engage in sexually explicit conduct on live web camera. Both websites have been disabled.   This case was investigated as part of Operation Subterfuge, a multinational investigation coordinated by members of the FBI’s Violent Crimes Against Children (VCAC) International Task Force. VCAC special agents led the investigation with the assistance of the FBI’s Operation Rescue Me and the FBI’s Digital Analysis and Research Center and the Office of Victim Assistance. The South Africa Police Service, Family Violence, Child Protection and Sexual Offenses, Gauteng; Royal Canadian Mounted Police, National Child Exploitation Coordination Centre; the Dutch Police Service Agency, KLPD; and the Australian Federal Police, Child Protection Operations, Sydney were active partners in Operation Subterfuge. To date, over 320 minor victims have been identified as part of this operation.   In addition to his prison sentence, the defendant was ordered to pay $15,215 of restitution.   Trial Attorney Lauren Britsch of the Criminal Division’s Child Exploitation and Obscenity Section (CEOS) and Assistant U.S. Attorney Whitney Russell of the Eastern District of Virginia prosecuted the case.   This case was brought as part of Project Safe Childhood, a nationwide initiative to combat the growing epidemic of child sexual exploitation and abuse launched in May 2006 by the Department of Justice. Led by U.S. Attorneys’ Offices and CEOS, Project Safe Childhood marshals federal, state and local resources to better locate, apprehend and prosecute individuals who exploit children via the Internet, as well as to identify and rescue victims. For more information about Project Safe Childhood, please visit www.justice.gov/psc.  
+
+A Chicopee, Massachusetts man was sentenced to 210 months in prison and 10 years of supervised release for production of child pornography based on his participation in a website that was operated for the purpose of coercing and enticing minors as young as eight years old to engage in sexually explicit conduct on web camera.  Acting Assistant Attorney General Kenneth A. Blanco of the Justice Department’s Criminal Division; U.S. Attorney Dana J. Boente of the Eastern District of Virginia; and Section Chief John J. Brosnan of the FBI’s Violent Crimes Against Children Section (VCACS) made the announcement. Edward Parson, 46, was charged on April 4, 2016, and pleaded guilty before U.S. District Judge T.S. Ellis III of the Eastern District of Virginia on April 14.  According to admissions made in connection with the plea agreement, members of the conspiracy created false profiles on social networking sites popular with children, posing as young teenagers to lure children to two websites they controlled. Once on the conspirators’ websites, Parson admitted that members of the conspiracy showed the children pre-recorded videos of prior minor victims, often engaging in sexually explicit conduct, to make the new victims think that they were chatting with another minor. Parson further admitted that conspirators used these videos to coerce and entice children to engage in sexually explicit activity on their own web cameras, which could be viewed live by other members without the victim’s knowledge and which the website automatically recorded and made available for download later. Parson admitted that he chatted with minors in furtherance of the conspiracy. The defendant also admitted that one of the websites ranked the efforts of the members to successfully coerce and entice children to engage in sexually explicit conduct on live web camera. Both websites have been disabled. This case was investigated as part of Operation Subterfuge, a multinational investigation coordinated by members of the FBI’s Violent Crimes Against Children (VCAC) International Task Force. VCAC special agents led the investigation with the assistance of the FBI’s Operation Rescue Me and the FBI’s Digital Analysis and Research Center and the Office of Victim Assistance. The South Africa Police Service, Family Violence, Child Protection and Sexual Offenses, Gauteng; Royal Canadian Mounted Police, National Child Exploitation Coordination Centre; the Dutch Police Service Agency, KLPD; and the Australian Federal Police, Child Protection Operations, Sydney were active partners in Operation Subterfuge.  To date, over 320 minor victims have been identified as part of this operation. Trial Attorney Lauren Britsch of the Criminal Division’s Child Exploitation and Obscenity Section (CEOS) and Assistant U.S. Attorney Whitney Russell of the Eastern District of Virginia prosecuted the case.  This case was brought as part of Project Safe Childhood, a nationwide initiative to combat the growing epidemic of child sexual exploitation and abuse launched in May 2006 by the Department of Justice. Led by U.S. Attorneys’ Offices and CEOS, Project Safe Childhood marshals federal, state and local resources to better locate, apprehend and prosecute individuals who exploit children via the Internet, as well as to identify and rescue victims. For more information about Project Safe Childhood, please visit www.justice.gov/psc..
+___________________________________________________________________
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><font color = "green"> Note: </font>
+As can be seen in the output above, the first pairs of the press releases are different stages of the same crime while the second pairs are press releases covering similar crimes. You can easily change the <code>top_n</code> argument of the <code>find_similar_docs</code> function above to see more similar documents.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+</div>
+</div>
+</div>
 </div>
 </body>
 
